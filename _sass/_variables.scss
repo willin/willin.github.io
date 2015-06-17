@@ -1,0 +1,53 @@
+/* ==========================================================================
+VARIABLES
+
+- Breakpoints
+- Desktop
+- Tablet
+- Type Scale
+========================================================================== */
+
+
+/* Breakpoints
+========================================================================== */
+
+/**
+*
+* There are two breakpoints located in /_sass/_queries.scss
+* One for tablets, and one for desktops. NKD is mobile first.
+* This sets the range for those breakpoints.
+* Queries are meant to be extended as needed.
+*
+*/
+
+/* Large Breakpoint */
+$LARGE-min-width: 64em;
+
+/* Medium Breakpoint */
+$MEDIUM-max-width: 64em;
+$MEDIUM-min-width: 32em;
+
+@mixin font-size-0{
+  font-size: 6em;
+  font-size: 6rem;
+}
+
+@mixin font-size-1{
+  font-size: 2.4em;
+  font-size: 2.4rem;
+}
+
+@mixin font-size-2{
+  font-size: 2em;
+  font-size: 2rem;
+}
+
+@mixin font-size-3{
+  font-size: 1.6em;
+  font-size: 1.6rem;
+}
+
+@mixin font-size-4{
+  font-size: 1.2em;
+  font-size: 1.2rem;
+}

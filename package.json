@@ -1,0 +1,42 @@
+{
+    "name": "jekyll-pjax",
+    "description": "jekyll pjax with nkd",
+    "version": "1.0.0",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://gitcafe.com/willin/willin.git"
+    },
+    "bugs" : {
+        "url" : "https://gitcafe.com/willin/willin/tickets",
+        "email" : "i@willin.wang"
+    },
+    "homepage": "http://willin.wang",
+    "keywords": [
+        "willin",
+        "jekyll",
+        "ruby",
+        "pjax",
+        "static site generator",
+        "html5",
+        "css",
+        "sass",
+        "template"
+    ],
+    "devDependencies": {
+        "gulp": "~3.8.2",
+        "gulp-livereload": "~0.2.0",
+        "gulp-minify-css": "~0.2.0",
+        "tiny-lr": "0.0.5",
+        "gulp-util": "~2.2.12",
+        "gulp-watch": "~0.5.0",
+        "gulp-imagemin": "~0.1.5",
+        "gulp-sass": "~0.4.1",
+        "jshint-stylish": "~0.1.5",
+        "gulp-autoprefixer": "0.0.5",
+        "gulp-ruby-sass": "~0.3.1",
+        "gulp-uglify" : "~0.3.1",
+        "gulp-rename" : "~1.2.0",
+        "gulp-concat" : "~2.2.0"
+    },
+    "license": "MIT"
+}

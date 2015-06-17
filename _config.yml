@@ -1,0 +1,22 @@
+# Site settings
+title: "W2B - Willin Wang's Blog"
+description: "To be Willin is to be willing."
+keywords: "Willin,Willin Wang,王之琳,长岛冰泪"
+author: "Willin Wang"
+baseurl: ""
+url: "http://willin.wang"
+domain: "willin.wang"
+exclude: [README.md, Rakefile, node_modules, Procfile]
+
+duoshuo: willin
+qq: 2539929
+email: willin@willin.org
+
+# Build settings
+truncate: 300
+paginate: 5
+permalink: /:title/
+paginate_path: "/page/:num/"
+markdown: kramdown
+future: true
+highlighter: true
