@@ -6,7 +6,7 @@ author: "Willin Wang"
 baseurl: ""
 url: "http://willin.wang"
 domain: "willin.wang"
-exclude: [README.md, Rakefile, node_modules, Procfile]
+exclude: [README.md, Rakefile, node_modules, Procfile, .git]
 
 duoshuo: willin
 qq: 2539929
