@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* ==========================================================================
+VARIABLES
+
+- Breakpoints
+- Desktop
+- Tablet
+- Type Scale
+========================================================================== */
+/* Breakpoints
+========================================================================== */
+/**
+*
+* There are two breakpoints located in /_sass/_queries.scss
+* One for tablets, and one for desktops. NKD is mobile first.
+* This sets the range for those breakpoints.
+* Queries are meant to be extended as needed.
+*
+*/
+/* Large Breakpoint */
+/* Medium Breakpoint */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+html { max-width: 100%; overflow-x: hidden; font-size: 62.5%; /* 10÷16=62.5% */ }
+
+body { font-size: 1.2em; font-size: 1.2rem; /* 12÷10=1.2 */ }
+
+p { font-size: 1.4em; font-size: 1.4rem; }
+
+a { text-decoration: none; }
+
+::selection { background: #333; color: #fff; text-shadow: none; }
+
+::-moz-selection { background: #333; color: #fff; text-shadow: none; }
+
+#logo { min-width: 200px; width: 88%; max-width: 500px; margin: 20px auto; position: relative; background: #fff; text-align: center; padding: 20px; -webkit-transform: rotate3d(6, 4, 0, 10deg); -ms-transform: rotate3d(6, 4, 0, 10deg); transform: rotate3d(6, 4, 0, 10deg); -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1); box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1); z-index: 999; }
+#logo h1 { color: #ccc; color: rgba(150, 150, 150, 0.8); font-weight: normal; text-transform: uppercase; text-shadow: 0 2px 1px white, 0 0 0 rgba(0, 0, 0, 0.7), 0 4px 6px white; padding-bottom: 10px; font-size: 2.4em; font-size: 2.4rem; position: relative; }
+#logo h2 { color: #ccc; color: rgba(150, 150, 150, 0.8); font-weight: normal; text-shadow: 0 2px 1px white, 0 0 0 rgba(0, 0, 0, 0.7), 0 4px 6px white; position: relative; background: #fff; font-size: 1.6em; font-size: 1.6rem; z-index: 999; }
+#logo h2:before { content: " "; position: absolute; width: 100%; height: 1px; background: #ddd; left: 0; top: 50%; margin-top: -1px; z-index: -1; }
+#logo .button, #logo button { display: block; text-align: center; font-size: 1.2em; font-size: 1.2rem; padding: 8px; margin: 8px auto; background: #efefef; border-radius: 3px; color: #555555; border: none; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+body { background: url("/static/images/body.jpg"); }
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) { body { background: url("/static/images/body_2x.jpg"); -webkit-background-size: 100px 100px; background-size: 100px 100px; } }
+/* ========================================================================== QUERIES
+ Mobile first media queries
+ - not-small - medium - large ========================================================================== */
+/** These queries are constructed to be for mobile first css. You should write all styles for mobile and override things at larger breakpoints where needed.  You can use this query inside or outside of a class like so @include breakpoint(medium) { .someclass { color: #ee4466; } }  or  .someclass { @include breakpoint(large) { .someclass { color: #ffcc33; } } }  It's rather lovely.  */
+@media screen and (min-width: 32em) { #logo { margin-top: 200px; }
+  #logo h1 { font-size: 6em; font-size: 6rem; } }
