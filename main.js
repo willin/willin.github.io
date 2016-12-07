@@ -92,15 +92,54 @@ jQuery(document).ready(function($){
        hiddenDistance: '700'
    });
 
-  //  $.ajax({
-  //      url: 'http://blog.willin.wang/feed.jsonp',
-  //      type: "GET",
-  //      dataType: 'jsonp',
-  //      jsonpCallback: 'callback',
-  //      success: function(data){
-  //      	console.log(data)
-  //      }
-  //   })
+   var blogs = {
+     jscool: 'http://js.cool/feed.jsonp',
+     w2b: 'http://blog.willin.wang/feed.jsonp',
+     willog: 'http://now.willin.wang/feed.jsonp'
+   }
+   function ajax(target) {
+     if(localStorage.getItem(target+'-date')!==null){
+      var pastTime = new Date()/1000 - parseInt(localStorage.getItem(target+'-date'));
+      var count = localStorage.getItem(target+'-count');
+      var content = localStorage.getItem(target+'-content');
+      if(pastTime <43200 && count!==null && content!==null){
+        $('#'+target+'-count').text(count);
+        $('#'+target+'-content').html(content);
+        return false;
+      }
+      localStorage.setItem(target+'-date',null);
+     }
+     (function(newTarget){
+       $.ajax({
+          cache: false,
+          url: blogs[newTarget],
+          type: "GET",
+          dataType: 'jsonp',
+          jsonpCallback: newTarget,
+          success: function(data){
+          	var posts = data.posts;
+            $('#'+newTarget+'-count').text(posts.length);
+            localStorage.setItem(newTarget+'-count',posts.length);
+          	posts = posts.slice(0,3);
+            var html = '';
+            for(var i=0; i<posts.length;i++){
+              var className= i===0&&newTarget==='willog' ? "list-group-item active":"list-group-item";
+              var date = newTarget==='willog'?posts[i].date.split(' ')[0]:posts[i].date;
+              html += '<div class="list-group"><a href="'+posts[i].url+'" class="'+className+'"> <h4 class="list-group-item-heading">'+posts[i].title+'</h4> <p class="list-group-item-text">'+date+'</p></a></div>'
+            }
+            $('#'+newTarget+'-content').html(html);
+            localStorage.setItem(newTarget+'-content',html);
+            localStorage.setItem(newTarget+'-date',new Date()/1000);
+          },
+          error:function(){
+          	// ajax(newTarget);
+          }
+       });
+     })(target);
+   }
+   Object.keys(blogs).forEach(function(target,index){
+     (function(target,index){setTimeout(function(){ajax(target);},index*10+10);})(target,index);
+   });
 });
 
 var duoshuoQuery = {short_name:"willin"};

@@ -1,6 +1,9 @@
 
 /*@import url('demo.css');*/
-
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
+  background-color: #f44336;
+  border-color: #f44336;
+}
 @font-face {
   font-family: 'fontawesome-selected';
 	src: url("./fonts/fontawesome-selected.eot");
@@ -878,69 +881,6 @@ sup {
 }
 
 /**--------------------------------------------------------------
-	[Section INTRO VIDEO BACKGROUND]
-	--------------------------------------------------------------**/
-.section-intro-videobackground {
-    position: relative;
-    background: none;
-    height: 100vh;
-    text-align: center;
-    overflow: hidden;
-    background: url("img/bg2.jpg") no-repeat;
-    background-position: 0 0 !important;
-    background-size: cover;
-}
-
-.section-intro-videobackground h2 {
-    padding: 15px 70px;
-}
-
-.section-intro-videobackground .section-content {
-    position: absolute;
-    height: 36vh;
-    top: 0;
-    left: 230px;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    padding: 0;
-}
-
-.section-intro-videobackground .video-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.64);
-    z-index: 0;
-}
-
-.section-intro-videobackground .btn-cta {
-    position: absolute;
-    display: inline-block;
-    bottom: 165px;
-    left: 230px;
-    right: 0;
-    margin: auto;
-    max-width: 200px;
-    text-align: center;
-}
-
-.section-intro-videobackground .btn-cta:after {
-    content: '';
-    position: absolute;
-    bottom: -173px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    height: 170px;
-    width: 3px;
-    background: #f44336;
-    z-index: 0;
-}
-
-/**--------------------------------------------------------------
 	[Section ABOUT]
 	--------------------------------------------------------------**/
 .section-about .btn-cta {
@@ -993,6 +933,42 @@ sup {
     font-size: 0.88889rem;
     margin: 15px 0px;
     text-transform: uppercase;
+}
+
+.section-news .loading{
+  text-align: center;
+}
+.section-news .loading i{
+  font-size: 2em;
+  color: #f44336;
+  -moz-animation:rotate 2s infinite linear;
+  -webkit-animation:rotate 2s infinite linear;
+  animation:rotate 2s infinite linear;
+}
+
+@-moz-keyframes rotate{
+ 0%{
+   -moz-transform:rotate(0deg);
+  }
+  100%{
+    -moz-transform:rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate{
+ 0%{
+   -webkit-transform:rotate(0deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+  }
+}
+@keyframes rotate{
+ 0%{
+   transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
 }
 
 /**--------------------------------------------------------------
