@@ -1122,7 +1122,7 @@ sup {
 /**--------------------------------------------------------------
 	[Section CONTACT]
 	--------------------------------------------------------------**/
-.section-contact .block-my-contact-form {
+.block-my-contact-form {
     margin-top: 40px;
 }
 
@@ -1130,29 +1130,29 @@ sup {
     display: table;
 }
 
-.section-contact .my-contact {
+.my-contact {
     display: table-row;
 }
 
-.section-contact .my-contact svg, .section-contact .my-contact img {
+.my-contact svg, .my-contact img {
     display: table-cell;
     width: 50px;
 }
 
-.section-contact .my-contact figcaption {
+.my-contact figcaption {
     display: table-cell;
     vertical-align: middle;
     padding: 0px 0px 28px 28px;
 }
 
-.section-contact .my-contact .my-contact-heading {
+.my-contact .my-contact-heading {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     display: block;
 }
 
-.section-contact .my-contact .my-contact-data {
+.my-contact .my-contact-data {
     display: block;
 }
 
