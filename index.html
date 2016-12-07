@@ -14,12 +14,12 @@
     <link rel="apple-touch-icon" sizes="152x152" href="http://willin.wang/touch-icon-ipad-retina-precomposed.png">
     <script src="./pace.js"></script>
     <link href="./pace.css" rel="stylesheet" />
-    <script type="text/javascript">Pace.on('start',function(){ document.getElementById('mask').style.display='block'; setTimeout(function(){document.getElementById('mask').style.display='none';},5000); });Pace.on('done',function(){ document.getElementById('mask').style.display='none';}); </script>
+    <!-- <script type="text/javascript">Pace.on('start',function(){ document.getElementById('mask').style.display='block'; setTimeout(function(){document.getElementById('mask').style.display='none';},5000); });Pace.on('done',function(){ document.getElementById('mask').style.display='none';}); </script> -->
     <link href="./bootstrap.css" rel="stylesheet" lazyload />
     <link href="./style.css" rel="stylesheet" lazyload />
 </head>
 <body data-spy="scroll" data-target="#top-navigation" data-offset="40">
-  <div id="mask"></div>
+  <!-- <div id="mask"></div> -->
   <div id="page-wrapper">
     <div class="responsive-menu"><span class="responsive-menu-heading">Willin Wang</span><a id="menu-toggle" href="#" class="responsive-menu-toggle"><img src="./images/menu-button.svg" alt="menu"></a></div>
     <header id="page-sidebar-wrapper" class="header-sidebar">
@@ -27,6 +27,7 @@
         <ul class="nav top-menu">
           <li><a href="#section-intro">主页</a></span></li>
           <li><a href="#section-about">简介</a></li>
+          <li><a href="#section-news">动态</a></li>
           <li><a href="#section-skills">技能</a></li>
           <li><a href="#section-experience">经验</a></li>
           <li><a href="#section-education">经历</a></li>
@@ -110,6 +111,24 @@
        </div>
      </section>
      <!-- END section ABOUT-->
+     <section id="section-news" class="section-news">
+       <div class="container">
+         <div class="section-heading">
+           <div class="row">
+             <div class="col-md-12">
+               <h2>动态</h2>
+             </div>
+           </div>
+         </div>
+         <div class="section-content">
+           <div class="row">
+             <div class="col-md-12">
+              <h3>待完善</h3>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
      <!-- section SKILLS-->
      <section id="section-skills" class="section-skills color-bg">
        <div class="container">
@@ -145,7 +164,7 @@
                <div class="col-md-12">
                  <h4>
                    精通 &ge; 80% |
-                   熟悉 &ge; 60% |
+
                    掌握 &ge; 40% |
                    了解 &lt; 40%
                  </h4>
@@ -175,7 +194,7 @@
              <div class="row">
                <div class="col-md-12">
                  <h3>技术与工具</h3>
-                 <p>一直从事Web服务器端相关的工作，技术范围主要但不限于：各种Web后端开发语言、框架，前端框架（如jQuery、BootStrap、Meterial UI、滚动视差、React等），关系型数据库，非关系型数据库（No-SQL），缓存，性能，安全，DevOps等。敢为人先，尝试各类新事物如ECMAScript 7、HTTP/2等。</p>
+                 <p>一直从事Web服务器端相关的工作，涉及范围包括但不限于：各种Web后端开发语言、框架，前端框架（如jQuery、BootStrap、Meterial UI、滚动视差、React等），关系型数据库，非关系型数据库（No-SQL），缓存，性能，安全，DevOps，测试，阿里云，AWS，DNS，负载均衡等。敢为人先，尝试各类新事物如ECMAScript 7、HTTP/2等。</p>
                  <p>从2011年底开始能够使用OS X系统无障碍进行日常办公开发工作。精通各项基础技能，如命令行（常用iTerm + zsh）、代码版本控制（Git）、各种UML建模工具（OmniGraffle、MS Visio等）、开发IDE（Atom、WebStorm、Sublime Text等）、文档工具（GitBook、Markdown、Swagger、JSDoc）、日常办公软件（MS Office）。</p>
                </div>
              </div>
@@ -220,7 +239,7 @@
                </div>
                <div class="col-md-12">
                  <div id="skillbar5" class="skillbar-block"><span class="skillbar-exp hidden-xs">77<i>%</i></span>
-                   <div class="skillbar-wrapper"><span class="skillbar-heading">缓存（如Redis）</span>
+                   <div class="skillbar-wrapper"><span class="skillbar-heading">自动化测试（TDD/BDD/代码覆盖率）</span>
                      <div data-progress-percent="77" class="skillbar-container">
                        <div class="bar-skill"></div>
                      </div>
@@ -290,7 +309,7 @@
              <div class="row">
                <div class="col-md-12">
                  <h3><script type="text/javascript">document.write(new Date().getFullYear() - 2011 + 1)</script>年工作经验</h3>
-                 <p>基本没有停止过编码工作。先后参与或主导的项目涵盖政企OA、港口EDI、移动互联网、物联网、智能家居，具体项目包括：金陵科技学院信息技术学院OA和学院网站，平顶山公交OA，淄博公交OA中的几个模块，连云港科技计划管理系统，连云港财政局专项资金管理系统，连云港公安局网上执法告知系统，连云港科技查新管理系统，连云港口岸业务平台，连云港出入境检验检疫系统，我爱信用卡管家，炎黄国际（南京）OA，66脑大脑训练产品，民生银行地域规划管理平台、PhotoKis幼儿园相册、么么明信片产品、螃蟹云平台、物联Open-API及OSS系统。先后经历ASP.Net研发工程师、项目经理、PHP工程师、前端交互开发工程师、Ruby工程师、架构师、技术经理、Node.js工程师、Scrum Master等。</p>
+                 <p>基本没有停止过编码工作。先后参与或主导的项目涵盖政企OA、港口EDI、移动互联网、物联网、智能家居，具体项目包括：金陵科技学院信息技术学院OA和学院网站，平顶山公交OA，淄博公交OA中的几个模块，连云港科技计划管理系统，连云港财政局专项资金管理系统，连云港公安局网上执法告知系统，连云港科技查新管理系统，连云港口岸业务平台，连云港出入境检验检疫系统，我爱信用卡管家，炎黄国际（南京）OA，66脑大脑训练产品，民生银行地域规划管理平台、PhotoKis幼儿园相册、么么明信片产品、螃蟹云平台、物联Open-API及BSS/OSS系统等。</p>
                </div>
              </div>
            </div>
@@ -301,11 +320,11 @@
                    <li class="event">
                      <input id="checkbox-exp1" type="radio" name="exp-tl-group" checked>
                      <label></label>
-                     <div class="thumb company1"><span>2016 - Now</span></div>
+                     <div class="thumb project1"><span>2014 - 至今</span></div>
                      <div class="content-perspective">
                        <div class="content">
                          <div class="content-inner">
-                           <h3>Wulian Open-API</h3>
+                           <h3>物联 Open-API</h3>
                            <p>包括用户接口、设备接口、产测接口、合作伙伴接口四大类接口。从项目之初至今，历时4个大版本。代码量从 v2版本巅峰值（180万行）优化到目前项目整体不超过30万行。接口性能从平均响应时间60ms（v2）优化到20ms 以内（v3、v4）。框架先后从 Express、Restify 到 HApi，目前版本中大量使用 ES6/7特性。</p>
                          </div>
                        </div>
@@ -314,25 +333,12 @@
                    <li class="event">
                      <input id="checkbox-exp2" type="radio" name="exp-tl-group">
                      <label></label>
-                     <div class="thumb company2"><span>2012 - 2016</span></div>
+                     <div class="thumb project2"><span>2011 - 2012</span></div>
                      <div class="content-perspective">
                        <div class="content">
                          <div class="content-inner">
-                           <h3>UX/UI designer in SEO Expert, LLC.</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.</p>
-                         </div>
-                       </div>
-                     </div>
-                   </li>
-                   <li class="event">
-                     <input id="checkbox-exp3" type="radio" name="exp-tl-group">
-                     <label></label>
-                     <div class="thumb company3"><span>2009 - 2012</span></div>
-                     <div class="content-perspective">
-                       <div class="content">
-                         <div class="content-inner">
-                           <h3>Web designer in freelance</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.</p>
+                           <h3>连云港科技查新管理系统</h3>
+                           <p>独立完成需求分析，功能设计和系统的设计开发。项目中使用了中科院智能分词系统ICTCLAS等技术，被推荐省级优秀毕业设计。</p>
                          </div>
                        </div>
                      </div>
@@ -360,7 +366,15 @@
              <div class="row">
                <div class="col-md-12">
                  <h3>工作学习经历</h3>
-                 <p>从刚出生就抱着电脑长大，写下第一行代码至今已超过20年。目前的技术栈涵盖Node.js、SQL、No-SQL、Front-End、算法、性能、安全等，曾从事前端、ASP.NET、PHP、Ruby等相关的开发工作、团队Leader、Scrum Master、项目经理、技术经理等方面的职能工作。良好的编码（ES 6/7、ESLint、W3C、代码覆盖率、TDD/BDD自动化测试、CI持续集成等）规范及文档（GitBook、UML、OmniGraffle、MS Visio、MS Office等）习惯。</p>
+                 <p>从刚出生就抱着电脑长大，写下第一行代码至今已超过20年，具有良好的编码规范及文档习惯。2010年在校期间开始参与项目开发，第一批加入学院与金蝶合作的软件创新实验室，担任实验室组长。</p>
+                 <p>
+                   在目前团队中的主要工作成果：
+                 </p>
+                 <ol>
+                   <li>实现用户体系从0到1的突破，将用户账号体系引入；</li>
+                   <li>推进全球化服务的搭建，目前服务器分布在6个国家地区，symmetric 进行主主数据同步，优化数据表结构以适应同步冲突而导致的问题；</li>
+                   <li>降低测试运维风险及成本，采用 TDD/BDD 和持续集成进行自动测试、自动部署，并优化守护进程，进行自动重启、短信告警等服务的搭建。</li>
+                 </ol>
                </div>
              </div>
            </div>
@@ -440,7 +454,7 @@
          <div class="section-content">
            <div class="row">
              <div class="col-md-12">
-              <h3>有偿服务</h3>
+              <h3>待完善</h3>
              </div>
            </div>
          </div>

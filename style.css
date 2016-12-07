@@ -504,7 +504,7 @@
 	background: #000;
 }
 
- 
+
 /**--------------------------------------------------------------
 	[Body, headings, page wrappers]
 	--------------------------------------------------------------**/
@@ -1941,6 +1941,15 @@ ul.blog-pagination .active a {
 .block-timeline .company-edu4 {
     background: url(./images/wulian.jpg);
 }
+
+.block-timeline .project1 {
+    background: url(./images/shgg.jpg)
+}
+
+.block-timeline .project2 {
+    background: url(./images/kjcx.jpg)
+}
+
 .block-timeline .timeline {
     margin-top: 40px;
 }
