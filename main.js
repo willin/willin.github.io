@@ -125,7 +125,7 @@ jQuery(document).ready(function($){
             for(var i=0; i<posts.length;i++){
               var className= i===0&&newTarget==='willog' ? "list-group-item active":"list-group-item";
               var date = newTarget==='willog'?posts[i].date.split(' ')[0]:posts[i].date;
-              html += '<div class="list-group"><a href="'+posts[i].url+'" class="'+className+'"> <h4 class="list-group-item-heading">'+posts[i].title+'</h4> <p class="list-group-item-text">'+date+'</p></a></div>'
+              html += '<div class="list-group"><a href="'+posts[i].url+'" class="'+className+'" target="_blank"> <h4 class="list-group-item-heading">'+posts[i].title+'</h4> <p class="list-group-item-text">'+date+'</p></a></div>'
             }
             $('#'+newTarget+'-content').html(html);
             localStorage.setItem(newTarget+'-content',html);
