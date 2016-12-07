@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="cn">
 <head>
@@ -15,12 +14,12 @@
     <link rel="apple-touch-icon" sizes="152x152" href="http://willin.wang/touch-icon-ipad-retina-precomposed.png">
     <script src="./pace.js"></script>
     <link href="./pace.css" rel="stylesheet" />
+    <script type="text/javascript">Pace.on('start',function(){ document.getElementById('mask').style.display='block'; setTimeout(function(){document.getElementById('mask').style.display='none';},5000); });Pace.on('done',function(){ document.getElementById('mask').style.display='none';}); </script>
     <link href="./bootstrap.css" rel="stylesheet" lazyload />
     <link href="./style.css" rel="stylesheet" lazyload />
 </head>
 <body data-spy="scroll" data-target="#top-navigation" data-offset="40">
   <div id="mask"></div>
-  <script type="text/javascript">Pace.on('start',function(){ document.getElementById('mask').style.display='block'; setTimeout(function(){document.getElementById('mask').style.display='none';},5000); });Pace.on('done',function(){ document.getElementById('mask').style.display='none';});</script>
   <div id="page-wrapper">
     <div class="responsive-menu"><span class="responsive-menu-heading">Willin Wang</span><a id="menu-toggle" href="#" class="responsive-menu-toggle"><img src="./images/menu-button.svg" alt="menu"></a></div>
     <header id="page-sidebar-wrapper" class="header-sidebar">
@@ -77,14 +76,14 @@
              <div class="row">
                <div class="col-md-5 col-sm-6">
                  <div class="about-avatar-wrapper"><img src="./images/avatar.jpg" alt="John Smith" class="img-responsive about-avatar">
-                   <a class="btn btn-cta btn-cta-solid" href="./willinwang.pdf">下载 .pdf 简历</a>
+                   <a class="btn btn-cta btn-cta-solid" href="./willinwang.pdf" target="_blank">下载 .pdf 简历</a>
                  </div>
                </div>
                <div class="col-md-7 col-sm-6">
                  <ul class="about-me-list">
                    <li><span>姓名:</span>&nbsp;王之琳</li>
                    <li><span>英文名:</span>&nbsp;Willin Wang</li>
-                   <li><span>工作年限:</span>&nbsp;<script type="text/javascript">document.write(new Date().getFullYear() - 2011 + 1)</script>年</li>
+                   <li><span>职位:</span>&nbsp;系统架构师/全栈团队负责人</li>
                    <li><span>位置:</span>&nbsp;江苏省，南京市</li>
                    <li><span>博客:</span>&nbsp;<a href="http://blog.willin.wang/" target="_blank">W2B</a>（个人）、<a href="http://js.cool/" target="_blank">JS Cool</a>（技术、创意）</li>
                    <li><span>电子书:</span>&nbsp;<a href="http://leader.js.cool/" target="_blank">《可替代团队领袖培养计划》</a>、<a href="https://wulian.gitbooks.io/guide/content/" target="_blank">《全栈团队指导手册》</a>、<a href="http://money.js.cool/" target="_blank">《百万富翁之路》</a></li>
@@ -126,28 +125,47 @@
              <div class="row">
                <div class="col-md-12">
                  <h3>一些立足之本</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
+                 <p>NIIT认证的面向对象开发者（Object Oriented Application Developer）和企业系统工程师（Enterprise Systems Engineer）。HackerRank算法排名全球前100名。先后担任过ASP.Net研发工程师、项目经理、PHP工程师、前端交互开发工程师、Ruby工程师、架构师、技术经理、Node.js全栈工程师、Scrum Master等职务。</p>
+                 <p>
+                   目前在团队中的主要职责：
+                 </p>
+                 <ol>
+                   <li>负责技术选型，搭建项目代码框架，指导进行模块功能的设计和开发及参与部分模块功能设计开发过程；</li>
+                   <li>负责数据库表设计、优化，数据库查询及优化；</li>
+                   <li>负责产品测试运维，搭建自动化测试框架及 CI 持续集成服务，并指导进行 TDD/BDD 测试用例编写；</li>
+                   <li>负责项目流程、团队流程、规范的制定，负责各项评审，主导进行优化升级开展；</li>
+                   <li>负责团队建设及团队培训，主要承担 Scrum Master 角色；</li>
+                   <li>参与部分产品需求制定。</li>
+                 </ol>
                </div>
              </div>
            </div>
            <div class="block-circles-skills">
              <div class="row">
+               <div class="col-md-12">
+                 <h4>
+                   精通 &ge; 80% |
+                   熟悉 &ge; 60% |
+                   掌握 &ge; 40% |
+                   了解 &lt; 40%
+                 </h4>
+               </div>
                <div class="col-md-4 col-sm-6">
                  <div class="skill-wrapper">
-                   <div id="circle1" data-progress-percent="85" class="circle-skill"><strong></strong></div>
-                   <div class="circle-skill-heading"><span class="my-skill-heading">前端交互</span><span class="my-skill-exp">曾有3年工作经验</span></div>
+                   <div id="circle1" data-progress-percent="80" class="circle-skill"><strong></strong></div>
+                   <div class="circle-skill-heading"><span class="my-skill-heading">前端交互</span><span class="my-skill-exp"><script type="text/javascript">document.write(new Date().getFullYear() - 2008 + 1)</script>年</span></div>
                  </div>
                </div>
                <div class="col-md-4 col-sm-6">
                  <div class="skill-wrapper">
-                   <div id="circle2" data-progress-percent="90" class="circle-skill"><strong></strong></div>
-                   <div class="circle-skill-heading"><span class="my-skill-heading">后端架构</span><span class="my-skill-exp">至今<script type="text/javascript">document.write(new Date().getFullYear() - 2010 + 1)</script>年项目经验</span></div>
+                   <div id="circle2" data-progress-percent="89" class="circle-skill"><strong></strong></div>
+                   <div class="circle-skill-heading"><span class="my-skill-heading">后端架构</span><span class="my-skill-exp"><script type="text/javascript">document.write(new Date().getFullYear() - 2010 + 1)</script>年</span></div>
                  </div>
                </div>
                <div class="col-md-4 col-sm-6">
                  <div class="skill-wrapper">
                    <div id="circle3" data-progress-percent="65" class="circle-skill"><strong></strong></div>
-                   <div class="circle-skill-heading"><span class="my-skill-heading">团队管理</span><span class="my-skill-exp"><script type="text/javascript">document.write(new Date().getFullYear() - 2014 + 1)</script>年团队管理建设</span></div>
+                   <div class="circle-skill-heading"><span class="my-skill-heading">团队建设</span><span class="my-skill-exp"><script type="text/javascript">document.write(new Date().getFullYear() - 2014 + 1)</script>年</span></div>
                  </div>
                </div>
              </div>
@@ -157,28 +175,53 @@
              <div class="row">
                <div class="col-md-12">
                  <h3>技术与工具</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit. Quisque varius eros ac purus dignissim.</p>
+                 <p>一直从事Web服务器端相关的工作，技术范围主要但不限于：各种Web后端开发语言、框架，前端框架（如jQuery、BootStrap、Meterial UI、滚动视差、React等），关系型数据库，非关系型数据库（No-SQL），缓存，性能，安全，DevOps等。敢为人先，尝试各类新事物如ECMAScript 7、HTTP/2等。</p>
+                 <p>从2011年底开始能够使用OS X系统无障碍进行日常办公开发工作。精通各项基础技能，如命令行（常用iTerm + zsh）、代码版本控制（Git）、各种UML建模工具（OmniGraffle、MS Visio等）、开发IDE（Atom、WebStorm、Sublime Text等）、文档工具（GitBook、Markdown、Swagger、JSDoc）、日常办公软件（MS Office）。</p>
                </div>
              </div>
            </div>
            <div class="block-skillbars">
              <div class="row">
                <div class="col-md-12">
-                 <h4>精通</h4>
-               </div>
-               <div class="col-md-12">
-                 <div id="skillbar1" class="skillbar-block"><span class="hidden-xs skillbar-exp">99<i>%</i></span>
-                   <div class="skillbar-wrapper"><span class="skillbar-heading">Russian Native</span>
-                     <div data-progress-percent="99" class="skillbar-container">
+                 <div id="skillbar1" class="skillbar-block"><span class="hidden-xs skillbar-exp">95<i>%</i></span>
+                   <div class="skillbar-wrapper"><span class="skillbar-heading">Node.js</span>
+                     <div data-progress-percent="95" class="skillbar-container">
                        <div class="bar-skill"></div>
                      </div>
                    </div>
                  </div>
                </div>
                <div class="col-md-12">
-                 <div id="skillbar2" class="skillbar-block"><span class="skillbar-exp hidden-xs">60<i>%</i></span>
-                   <div class="skillbar-wrapper"><span class="skillbar-heading">English Intermediate</span>
-                     <div data-progress-percent="60" class="skillbar-container">
+                 <div id="skillbar2" class="skillbar-block"><span class="skillbar-exp hidden-xs">80<i>%</i></span>
+                   <div class="skillbar-wrapper"><span class="skillbar-heading">Vanilla JS</span>
+                     <div data-progress-percent="80" class="skillbar-container">
+                       <div class="bar-skill"></div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-12">
+                 <div id="skillbar3" class="skillbar-block"><span class="skillbar-exp hidden-xs">82<i>%</i></span>
+                   <div class="skillbar-wrapper"><span class="skillbar-heading">HTML 5/CSS 3</span>
+                     <div data-progress-percent="82" class="skillbar-container">
+                       <div class="bar-skill"></div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-12">
+                 <div id="skillbar4" class="skillbar-block"><span class="skillbar-exp hidden-xs">85<i>%</i></span>
+                   <div class="skillbar-wrapper"><span class="skillbar-heading">关系型数据库（如MySQL、Oracle）</span>
+                     <div data-progress-percent="85" class="skillbar-container">
+                       <div class="bar-skill"></div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-12">
+                 <div id="skillbar5" class="skillbar-block"><span class="skillbar-exp hidden-xs">77<i>%</i></span>
+                   <div class="skillbar-wrapper"><span class="skillbar-heading">缓存（如Redis）</span>
+                     <div data-progress-percent="77" class="skillbar-container">
                        <div class="bar-skill"></div>
                      </div>
                    </div>
@@ -247,7 +290,7 @@
              <div class="row">
                <div class="col-md-12">
                  <h3><script type="text/javascript">document.write(new Date().getFullYear() - 2011 + 1)</script>年工作经验</h3>
-                 <p>基本没有停止过编码工作。<script type="text/javascript">document.write(new Date().getFullYear() - 2014 + 1)</script>年团队建设经验。主导或参与的项目涵盖政企OA、港口EDI、移动互联网、物联网，目前所处的领域为互联网智能家居。具体参与、主导的项目包括：金陵科技学院信息技术学院OA和学院网站，平顶山公交OA，淄博公交OA中的几个模块，连云港科技计划管理系统，连云港财政局专项资金管理系统，连云港公安局网上执法告知系统，连云港科技查新管理系统，连云港口岸业务平台，连云港出入境检验检疫系统，我爱信用卡管家，炎黄国际（南京）OA，66脑大脑训练产品，民生银行地域规划管理平台、PhotoKis幼儿园相册、么么明信片产品、螃蟹云平台、物联Open-API及OSS系统。先后经历ASP.Net研发工程师、项目经理、PHP工程师、前端交互开发工程师、Ruby工程师、架构师、技术经理、Node.js工程师、Scrum Master等。</p>
+                 <p>基本没有停止过编码工作。先后参与或主导的项目涵盖政企OA、港口EDI、移动互联网、物联网、智能家居，具体项目包括：金陵科技学院信息技术学院OA和学院网站，平顶山公交OA，淄博公交OA中的几个模块，连云港科技计划管理系统，连云港财政局专项资金管理系统，连云港公安局网上执法告知系统，连云港科技查新管理系统，连云港口岸业务平台，连云港出入境检验检疫系统，我爱信用卡管家，炎黄国际（南京）OA，66脑大脑训练产品，民生银行地域规划管理平台、PhotoKis幼儿园相册、么么明信片产品、螃蟹云平台、物联Open-API及OSS系统。先后经历ASP.Net研发工程师、项目经理、PHP工程师、前端交互开发工程师、Ruby工程师、架构师、技术经理、Node.js工程师、Scrum Master等。</p>
                </div>
              </div>
            </div>
@@ -262,8 +305,8 @@
                      <div class="content-perspective">
                        <div class="content">
                          <div class="content-inner">
-                           <h3>UX/UI designer in freelance</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum.</p>
+                           <h3>Wulian Open-API</h3>
+                           <p>包括用户接口、设备接口、产测接口、合作伙伴接口四大类接口。从项目之初至今，历时4个大版本。代码量从 v2版本巅峰值（180万行）优化到目前项目整体不超过30万行。接口性能从平均响应时间60ms（v2）优化到20ms 以内（v3、v4）。框架先后从 Express、Restify 到 HApi，目前版本中大量使用 ES6/7特性。</p>
                          </div>
                        </div>
                      </div>
@@ -317,7 +360,7 @@
              <div class="row">
                <div class="col-md-12">
                  <h3>工作学习经历</h3>
-                 <p>从刚出生就抱着电脑长大，写下第一行代码至今已超过20年，HackerRank算法排名全球前100名。目前的技术栈涵盖Node.js、SQL、No-SQL、Front-End、算法、性能、安全等，曾从事前端、ASP.NET、PHP、Ruby等相关的开发工作、团队Leader、Scrum Master、项目经理、技术经理等方面的职能工作。良好的编码（ES 6/7、ESLint、W3C、代码覆盖率、TDD/BDD自动化测试、CI持续集成等）规范及文档（GitBook、UML、OmniGraffle、MS Visio、MS Office等）习惯。</p>
+                 <p>从刚出生就抱着电脑长大，写下第一行代码至今已超过20年。目前的技术栈涵盖Node.js、SQL、No-SQL、Front-End、算法、性能、安全等，曾从事前端、ASP.NET、PHP、Ruby等相关的开发工作、团队Leader、Scrum Master、项目经理、技术经理等方面的职能工作。良好的编码（ES 6/7、ESLint、W3C、代码覆盖率、TDD/BDD自动化测试、CI持续集成等）规范及文档（GitBook、UML、OmniGraffle、MS Visio、MS Office等）习惯。</p>
                </div>
              </div>
            </div>
@@ -358,7 +401,7 @@
                      <div class="content-perspective">
                        <div class="content">
                          <div class="content-inner">
-                           <h3>江苏金鸽网络科技有限公司 - <span>实习</span></h3>
+                           <h3>江苏金鸽网络科技有限公司: <span>实习</span></h3>
                            <p>ASP.NET软件研发工程师/项目经理<br />参与政府企业OA开发，主要服务于市政府、科技局、公安局、财务局、经信委等。工作期间完成百万+级Oracle数据查询优化，实现分页查询的重新封装；独立完成了连云港市科技查新管理系统，被推荐省级优秀毕业设计。 </p>
                          </div>
                        </div>
@@ -440,6 +483,7 @@
                    <ul class="social-links-list">
                      <li><a href="https://github.com/willin" class="my-social-link" target="_blank"><img src="./images/icons/github.svg" alt="Github" title="Github"></a></li>
                      <li><a href="https://coding.net/u/willin" class="my-social-link" target="_blank"><img src="./images/icons/coding.svg" alt="Coding.net" title="Coding.net"></a></li>
+                     <li><a href="https://www.npmjs.com/~willin" class="my-social-link" target="_blank"><img src="./images/icons/npm.svg" alt="NPM" title="NPM"></a></li>
                      <li><a href="http://weibo.com/willinx" class="my-social-link" target="_blank"><img src="./images/icons/weibo.svg" alt="微博" title="微博"></a></li>
                      <li><a href="http://www.jianshu.com/users/6c72e78080ff" class="my-social-link" target="_blank"><img src="./images/icons/jianshu.svg" alt="简书" title="简书"></a></li>
                      <li><a href="https://security.tencent.com/index.php/user/p/2BD591C33F7A56A89DCAB6B1072D1C68" class="my-social-link" target="_blank"><img src="./images/icons/tencent.svg" alt="腾讯应急响应中心" title="腾讯应急响应中心"></a></li>
