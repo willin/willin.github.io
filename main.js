@@ -93,9 +93,9 @@ jQuery(document).ready(function($){
    });
 
    var blogs = {
-     jscool: 'http://js.cool/feed.jsonp',
-     w2b: 'http://blog.willin.wang/feed.jsonp',
-     willog: 'http://now.willin.wang/feed.jsonp'
+     jscool: location.protocol + '//js.cool/feed.jsonp',
+     w2b: location.protocol + '//blog.willin.wang/feed.jsonp',
+     willog: location.protocol + '//now.willin.wang/feed.jsonp'
    }
    function ajax(target) {
      if(localStorage.getItem(target+'-date')!==null){
