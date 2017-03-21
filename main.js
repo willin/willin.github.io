@@ -93,7 +93,6 @@ jQuery(document).ready(function($){
    });
 
    var blogs = {
-     jscool: location.protocol + '//js.cool/feed.jsonp',
      w2b: location.protocol + '//blog.willin.wang/feed.jsonp',
      willog: location.protocol + '//now.willin.wang/feed.jsonp'
    }
