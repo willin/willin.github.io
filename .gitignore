@@ -4,6 +4,7 @@ _resources/*
 node_modules/*
 .sass-cache/*
 .idea/*
+demo/*
 
 Thumbs.db
 .DS_Store
