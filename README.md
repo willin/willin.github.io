@@ -1,5 +1,7 @@
 # Willin.Wang
 
+Write Less, Do More.
+
 <https://willin.wang/>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -13,9 +15,12 @@
   - [工具](#%E5%B7%A5%E5%85%B7)
 - [技术细节（Tricks）](#%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82tricks)
   - [CSS: 获取 隐藏元素的高度](#css-%E8%8E%B7%E5%8F%96-%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84%E9%AB%98%E5%BA%A6)
+  - [Hash 路由及过渡动画](#hash-%E8%B7%AF%E7%94%B1%E5%8F%8A%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB)
+    - [顶部标题渐隐](#%E9%A1%B6%E9%83%A8%E6%A0%87%E9%A2%98%E6%B8%90%E9%9A%90)
+    - [路由切换及过渡动画](#%E8%B7%AF%E7%94%B1%E5%88%87%E6%8D%A2%E5%8F%8A%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB)
   - [元素组件化，操作中心化](#%E5%85%83%E7%B4%A0%E7%BB%84%E4%BB%B6%E5%8C%96%E6%93%8D%E4%BD%9C%E4%B8%AD%E5%BF%83%E5%8C%96)
-    - [1. 抽出组件避免无谓的内存开销](#1-%E6%8A%BD%E5%87%BA%E7%BB%84%E4%BB%B6%E9%81%BF%E5%85%8D%E6%97%A0%E8%B0%93%E7%9A%84%E5%86%85%E5%AD%98%E5%BC%80%E9%94%80)
-    - [2. 元素组件化，操作中心化](#2-%E5%85%83%E7%B4%A0%E7%BB%84%E4%BB%B6%E5%8C%96%E6%93%8D%E4%BD%9C%E4%B8%AD%E5%BF%83%E5%8C%96)
+    - [元素组件化，抽出组件避免无谓的内存开销](#%E5%85%83%E7%B4%A0%E7%BB%84%E4%BB%B6%E5%8C%96%E6%8A%BD%E5%87%BA%E7%BB%84%E4%BB%B6%E9%81%BF%E5%85%8D%E6%97%A0%E8%B0%93%E7%9A%84%E5%86%85%E5%AD%98%E5%BC%80%E9%94%80)
+    - [操作中心化](#%E6%93%8D%E4%BD%9C%E4%B8%AD%E5%BF%83%E5%8C%96)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -44,6 +49,8 @@ Perhaps most things in the bundled script file are translations and views.
 - HyperApp：只有1kb的前端数据双向绑定框架
 - Vanilla ES2017： 新一代的原生 js 标准，写得好能比 jQuery、Vue、React 封装实现更高效
 - JSX： Facebook 发布的最初用于 React 的可以在 javascript 中进行快速模板编写的工具
+- HTML5： 主要应用 pushstate, localStorage 等特性
+- CSS3： 主要应用 Transition，FlexBox 等特性
 - stylus： 用于构建 CSS 样式的语言
 
 ### 工具
@@ -88,13 +95,63 @@ document.getElementById('id').clientHeight
 document.getElementById('id').scrollHeight
 ```
 
+### Hash 路由及过渡动画
+
+首先是设置全局的 css 过渡动画时间为 0.3s
+
+```stylus
+*, *::before, *::after
+  box-sizing border-box
+  transition all 300ms ease-in-out
+```
+
+#### 顶部标题渐隐
+
+只在 `profile` 首页路由隐藏，其他选项卡页面显示。
+
+无须多余 js，只用一行 state 判断：
+
+```js
+// _header.js
+export default (state) => (
+  <header>
+    <div id="logo" style={{ opacity: state.route !== 'profile' ? 1 : 0 }}>
+
+    </div>
+  </header>
+);
+```
+
+#### 路由切换及过渡动画
+
+SlideUp / SlideDown 动画效果通过简单的改变元素高度加 css 过渡实现。
+
+```js
+// actions
+export default {
+  // ...
+  setRoute: route => () => ({ route }),
+  setView: () => (_, actions) => {
+    const route = router();
+    actions.setRoute(route);
+    const items = document.getElementsByClassName('hidden');
+    for (let i = 0; i < items.length; i += 1) {
+      // eslint-disable-next-line no-param-reassign
+      items[i].style.maxHeight = '0px';
+    }
+    const view = document.getElementById(route);
+    view.style.maxHeight = `${view.scrollHeight}px`;
+  }
+};
+```
+
 ### 元素组件化，操作中心化
 
 参考提交 [`84280a94`](https://github.com/willin/willin.github.io/commit/84280a947f763489208497cd407b7afaae4ac33e)
 
 本次提交主要修改为：
 
-#### 1. 元素组件化，抽出组件避免无谓的内存开销
+#### 元素组件化，抽出组件避免无谓的内存开销
 
 以此处为例：
 
@@ -111,7 +168,7 @@ export default ({ state: { year, lang, langs }, actions: { changeLang } }) => {
 
 避免嵌套的方法定义，即 function 内再定义 function，每次执行的时候会重新分配新的内存空间。
 
-#### 2. 操作中心化
+#### 操作中心化
 
 以主界面框架为例：
 
