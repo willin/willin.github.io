@@ -1,0 +1,15 @@
+root: true
+extends: dwing
+env:
+  browser: true
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+plugins:
+  - html
+  - react
+globals:
+  hyperapp: true
+rules:
+  no-unused-vars: [2, { 'varsIgnorePattern': '^h$' }]
+  react/jsx-uses-vars: 2

@@ -1,0 +1,30 @@
+#container main
+  nav
+    ul
+      height 100px
+      background-color #ededed
+      position relative
+      justify-content center
+      align-items flex-end
+      display flex
+      i
+        display block
+        font-size 35px
+        padding-bottom 5px
+      a, a:visited
+        text-align center
+        display block
+        color $color5
+        border 0
+        width 115px
+        height 115px
+        padding-top 40px
+      a.active, a:hover
+        color $color4
+      a.active
+        border 1px solid #ccc
+        border-bottom 0
+        border-radius 5px 5px 0 0
+        background #ccc
+        background -webkit-linear-gradient(to bottom, #ccc, #ededed)
+        background linear-gradient(to bottom, #ccc, #ededed)

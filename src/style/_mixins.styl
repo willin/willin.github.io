@@ -1,0 +1,16 @@
+responsive-below($width)
+  $width = $width - 1
+  media = 'screen and (max-width: %s)' % $width
+  @media media
+    {block}
+
+responsive-above($width)
+  media = 'screen and (min-width: %s)' % $width
+  @media media
+    {block}
+
+responsive-between($min-width, $max-width)
+  $max-width = $max-width - 1
+  media = 'screen and (min-width: %s) and (max-width: %s)' % ($min-width $max-width)
+  @media media
+    {block}

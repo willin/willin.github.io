@@ -1,0 +1,29 @@
+{
+  "name": "willin.wang",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html --no-cache",
+    "compile": "NODE_ENV=production parcel build src/index.html -d build/ --public-url ./build --no-cache",
+    "build": "rm -rf build && npm run compile && mv build/index.html index.html",
+    "lint": "eslint src --fix"
+  },
+  "precommit": [
+    "lint",
+    "build"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "eslint-config-dwing": "^1.2.0",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-jsx": "^0.0.2",
+    "parcel-bundler": "^1.4.1",
+    "precommit": "^1.2.2",
+    "stylus": "^0.54.5"
+  },
+  "dependencies": {
+    "hyperapp": "^1.0.1"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.nyc_output/
+demo/
+dist/
+docs/
+.cache/
+
+*.log
+*.log.*
+.DS_Store
+dump.rdb
+coverage.lcov
