@@ -2,7 +2,7 @@
   nav
     ul
       height 100px
-      background-color #ededed
+      background-color $color4
       position relative
       justify-content center
       align-items flex-end
@@ -14,19 +14,87 @@
       a, a:visited
         text-align center
         display block
-        color $color5
+        color $color1
         border 0
         width 115px
         height 115px
         padding-top 40px
       a.active, a:hover
-        color $color4
+        color $color5
       a:hover
         padding-top 35px
       a.active
-        border 1px solid #ccc
+        border 1px solid #bbb
         border-bottom 0
         border-radius 5px 5px 0 0
-        background #ccc
-        background -webkit-linear-gradient(to bottom, #ccc, #ededed)
-        background linear-gradient(to bottom, #ccc, #ededed)
+        background #bbb
+        background -webkit-linear-gradient(to bottom, #bbb, $color4)
+        background linear-gradient(to bottom, #ccc, $color4)
+
+#profile
+  background $color5
+  display flex
+  align-items stretch
+  justify-content center
+  section
+    width 490px
+    padding 20px 0
+  .avatar
+    float left
+    margin 0 20px 0 0
+    background url('../public/avatar.jpg') #fff
+    border 5px solid #fafafa
+    width 150px
+    height 200px
+    background-size cover
+    background-position center center
+    box-shadow -2px 5px 10px rgba(0,0,0,0.5)
+  h1
+    font-size 37px
+    font-weight 900
+    text-shadow 1px 1px 1px #555
+    color #fff
+    line-height 34px
+    margin-top 8px
+  h3
+    margin-top 5px
+    font-size 18px
+    color #fff
+    line-height 18px
+  p
+    color $color4
+    font-size 14px
+    margin-top 15px
+    line-height 20px
+  aside
+    &::before
+      content ' '
+      width 2px
+      height 180px
+      background -webkit-linear-gradient(rgba(255,255,255,0), rgba(117, 152, 159, 0.35), rgba(255,255,255,0))
+      background -moz-linear-gradient(rgba(255,255,255,0), rgba(117, 152, 159, 0.35), rgba(255,255,255,0))
+      background linear-gradient(rgba(255,255,255,0), rgba(117, 152, 159, 0.35), rgba(255,255,255,0))
+      border-radius 50%
+      display block
+      position absolute
+      left -10px
+      top 0
+    margin-top 30px
+    width 310px
+    min-height 230px
+    margin-left 10px
+    padding 20px 0 0 20px
+    position relative
+    li
+      font-size 14px
+      margin-bottom 10px
+    label
+      background $color2
+      color $color5
+      padding 2px 3px
+      border-radius 3px
+      width 60px
+      display inline-block
+      text-align center
+    span
+      color $color3
