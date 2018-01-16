@@ -6,6 +6,7 @@
     "compile": "NODE_ENV=production parcel build src/index.html -d build/ --public-url ./build --no-cache",
     "build": "rm -rf build && npm run compile && mv build/index.html index.html",
     "lint": "eslint src --fix",
+    "toc": "doctoc README.md",
     "prepare": "npm run lint && npm run build"
   },
   "license": "MIT",
