@@ -53,7 +53,7 @@ Perhaps most things in the bundled script file are translations and views.
 
 偷懒了，所以用了 Babel 让项目臃肿了 8kb 左右，其实可以用其他的工具将 JSX 编译好的。
 
-p.s. 本项目中除去 Babel 编译加入的臃肿代码其他部分均为手写代码，未使用任何第三方库实现。目前项目仍在持续改进中，js 打包后 13kb（主要为 Babel runtime，翻译文件及页面模板居多，感谢 hyperapp 的设计理念让我在核心代码上持续优化精简），css 9kb（web 字体和 css reset 导致的臃肿）。最终完成时预计总计不超过 30kb。
+p.s. 本项目中除去 Babel 编译加入的臃肿代码其他部分均为手写代码，未使用任何第三方库实现。目前项目仍在持续改进中，js 打包后 13kb（主要为 Babel runtime，翻译文件及页面模板居多，感谢 hyperapp 的设计理念让我在核心代码上持续优化精简），css 9kb（web 字体和 css reset 导致的臃肿）。最终完成时预计总计不超过 30kb。
 
 ## 技术细节（Tricks）
 
@@ -148,4 +148,4 @@ export default ({ state, actions }) => {
 - 元素组件化，即把页面中复用的组件抽出
 - 操作中心化，即把重要操作全部放到 Actions 内执行
 
-优化的处理方案可以在最新的分支代码中查看。
+优化的处理方案可以在最新的分支代码中查看。
