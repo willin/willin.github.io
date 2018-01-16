@@ -8,5 +8,6 @@ export default {
       lang,
       i18n: i18n(lang)
     };
-  }
+  },
+  setRoute: route => () => ({ route })
 };

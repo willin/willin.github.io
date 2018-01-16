@@ -10,3 +10,8 @@ export const getLang = () => {
 export const $on = (target, type, callback, useCapture) => {
   target.addEventListener(type, callback, !!useCapture);
 };
+
+export const router = () => {
+  const route = window.location.hash.split('/')[1] || 'profile';
+  return ['profile', 'resume', 'portfilio', 'contact'].indexOf(route) !== -1 ? route : 'profile';
+};
