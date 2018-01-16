@@ -1,7 +1,7 @@
 import { h } from 'hyperapp';
 
-export default ({ state: { i18n, route } }) => (
-  <article id="profile" style={{ display: route === 'profile' ? 'flex' : 'none' }}>
+export default ({ state: { i18n } }) => (
+  <article id="profile" class="hidden">
     <section>
       <div class="avatar"></div>
       <h1>{i18n.willin}</h1>

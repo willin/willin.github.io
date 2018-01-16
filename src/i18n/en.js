@@ -11,6 +11,7 @@ module.exports = {
     ['EDU', 'BE, Jinling Institude of Technology'],
     ['Position', 'CTO @ AirDwing, Nanjing, China'],
     ['Master', 'Javascript FE/BE Develop'],
+    ['Mobile', '(+86)155-7797-4423'],
     ['Email', 'willin@willin.org']
   ]
 };

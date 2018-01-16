@@ -10,8 +10,8 @@
 - [x] Color Scheme using [GPLU-6](https://color.adobe.com/zh/GPLU-6-color-theme-10377548/?showPublished=true)
 - [x] Parcel Bundle (instead of webpack)
 - [x] Web fonts (Using IconFont and Font-Spider)
+- [x] Transition animation
 - [ ] Responsive
-- [ ] Transition animation
 
 Perhaps most things in the bundled script file are translations and views.
 

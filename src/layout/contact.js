@@ -1,7 +1,7 @@
 import { h } from 'hyperapp';
 
-export default ({ state }) => (
-  <article id="contact" style={{ display: state.route === 'contact' ? 'block' : 'none' }}>
+export default () => (
+  <article id="contact" class="hidden">
     Contact
   </article>
 );

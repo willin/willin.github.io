@@ -1,7 +1,7 @@
 import { h } from 'hyperapp';
 
-export default ({ state }) => (
-  <article id="portfilio" style={{ display: state.route === 'portfilio' ? 'block' : 'none' }}>
+export default () => (
+  <article id="portfilio" class="hidden">
     Portfilio
   </article>
 );
