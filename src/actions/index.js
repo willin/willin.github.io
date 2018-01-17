@@ -14,12 +14,14 @@ export default {
   setView: () => (_, actions) => {
     const route = router();
     actions.setRoute(route);
-    const items = document.getElementsByClassName('hidden');
-    for (let i = 0; i < items.length; i += 1) {
+    setTimeout(() => {
+      const items = document.getElementsByClassName('hidden');
+      for (let i = 0; i < items.length; i += 1) {
       // eslint-disable-next-line no-param-reassign
-      items[i].style.maxHeight = '0px';
-    }
-    const view = document.getElementById(route);
-    view.style.maxHeight = `${view.scrollHeight}px`;
+        items[i].style.maxHeight = '0px';
+      }
+      const view = document.getElementById(route);
+      view.style.maxHeight = `${view.scrollHeight}px`;
+    }, 50);
   }
 };

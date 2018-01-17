@@ -1,7 +1,7 @@
 module.exports = {
   willin: 'Willin Wang',
   subtitle: '資深 JS 全棧軟體設計師',
-  introduction: '從小學開始學習編程，初中開始寫博客。擁有超十年的項目及產品研發經驗，熟悉軟體生命周期的各個階段流程。目前在南京領導一個十人左右的初創公司研發團隊，同時也積極開源項目及經驗心得分享。',
+  introduction: '從小學開始學習編程，初中開始寫博客。擁有超十年的項目及產品研發經驗，熟悉軟體生命周期的各個階段流程。目前在南京領導一支十人左右的初創公司研發團隊，同時也積極開源項目及經驗心得分享。',
   profile: '個人資料',
   resume: '簡歷',
   portfilio: '作品',
@@ -12,5 +12,25 @@ module.exports = {
     ['專長', '基於 JS 的前後端開發與設計'],
     ['手機', '(+86)155-7797-4423'],
     ['信箱', 'willin@willin.org']
-  ]
+  ],
+  publication: '著作',
+  opensource: '開源項目',
+  works: '其他',
+  more: '更多',
+  author: '作者',
+  translator: '譯者',
+  owner: '所有者',
+  contributor: '貢獻者',
+  leader: '《不可替代的團隊領袖培養計劃》',
+  graphql: 'GraphQL 中文文檔',
+  anime: 'Anime.js 中文文檔',
+  es6tutorial: '《ECMAScript 6入門》',
+  vchart: 'VChart',
+  vchart_desc: 'Vue Chartist.js Component',
+  waliyun: 'WAliyun',
+  waliyun_desc: '比官方 SDK 更好用的阿里雲 Node.js SDK',
+  wqcloud: 'WQcloud',
+  wqcloud_desc: '已經瘋狂得不能用代碼行數（總計 66 行，包含空行和 debug）來衡量該項目了，代碼僅有 1,489 位元組（凈化後）',
+  now: 'Willog',
+  now_desc: '一個基於時間軸和 GeoLocation 的經歷記錄管理系統'
 };

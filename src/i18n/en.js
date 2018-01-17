@@ -14,5 +14,25 @@ module.exports = {
     ['Master', 'Javascript FE/BE Develop'],
     ['Mobile', '(+86)155-7797-4423'],
     ['Email', 'willin@willin.org']
-  ]
+  ],
+  publication: 'Publication',
+  opensource: 'Open Source',
+  works: 'Others',
+  more: 'More',
+  author: 'Author',
+  translator: 'Translator',
+  owner: 'Owner',
+  contributor: 'Contributor',
+  leader: '《Leader —— Mastering your team》（in Chinese）',
+  graphql: 'GraphQL Doc translated in Chinese',
+  anime: 'Anime.js Doc translated in Chinese',
+  es6tutorial: '《Start Learning ECMAScript 6》',
+  vchart: 'VChart',
+  vchart_desc: 'Vue Chartist.js Component',
+  waliyun: 'WAliyun',
+  waliyun_desc: 'Aliyun SDK for Node.js. Minimum, Flexible, Scalable.',
+  wqcloud: 'WQcloud',
+  wqcloud_desc: 'Only 66 LOC, QCloud SDK for Node.js',
+  now: 'Willog',
+  now_desc: '一个基于时间轴和 GeoLocation 的经历记录管理系统'
 };

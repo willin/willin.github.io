@@ -65,7 +65,6 @@
     color #fff
     line-height 18px
   p
-    color $color4
     font-size 14px
     margin-top 15px
     line-height 20px
@@ -102,3 +101,83 @@
       text-align center
     span
       color $color3
+
+#portfilio .bg
+  background: url('../public/bg_portfilio.jpg') 0 -270px;
+#contact .bg
+  background: url('../public/bg_contact.jpg') 0 -250px;
+#resume .bg
+  background: url('../public/bg_resume.jpg') 0 -276px;
+#resume, #portfilio, #contact
+  .bg
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    background-size: cover;
+    opacity: 0.6;
+    box-shadow: 0px 0px 5px #333;
+  section
+    padding 0 20px
+  h3
+    font-size 20px
+    margin 15px 2px
+    padding-left 30px
+    position relative
+    span
+      line-height 20px
+      border-bottom 1px solid $color1
+      padding-bottom 7px
+      display block
+    &::before
+      content '+'
+      color $color1
+      position absolute
+      top -5px
+      left 5px
+      display block
+      width 30px
+      height 30px
+      font-size 30px
+  .timeline
+    li
+      margin-bottom 20px
+      line-height 17px
+      margin-left 11px
+      font-size 13px
+      border-left 1px solid $color1
+      padding-left 15px
+    h4
+      font-weight bold
+      line-height 24px
+      font-size 15px
+      span
+        float right
+        line-height 17px
+        color $color1
+        font-size 14px
+        font-weight normal
+        padding 2px 6px
+    p
+      margin-top 5px
+  .circle
+    width 10px
+    height 10px
+    background $color1
+    border 1px solid $color1
+    border-radius 50%
+    position relative
+    &.disable
+      background-color $color4
+      border-color $clor4
+      &::before
+        border-color $color4
+    &::before
+      content " "
+      display block
+      width 14px
+      height 14px
+      border 1px solid $color1
+      border-radius 50%
+      position absolute
+      left -3px
+      top -3px
