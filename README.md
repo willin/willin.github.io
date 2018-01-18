@@ -34,6 +34,7 @@ Write Less, Do More.
 - [x] Web fonts (Using IconFont and Font-Spider)
 - [x] Transition animation
 - [ ] Responsive
+- [ ] Add SPA Support (Using pushstate router)
 
 Perhaps most things in the bundled script file are translations and views.
 
@@ -60,7 +61,7 @@ Perhaps most things in the bundled script file are translations and views.
 
 偷懒了，所以用了 Babel 让项目臃肿了 8kb 左右，其实可以用其他的工具将 JSX 编译好的。
 
-p.s. 本项目中除去 Babel 编译加入的臃肿代码其他部分均为手写代码，未使用任何第三方库实现。目前项目仍在持续改进中，js 打包后 13kb（主要为 Babel runtime，翻译文件及页面模板居多，感谢 hyperapp 的设计理念让我在核心代码上持续优化精简），css 9kb（web 字体和 css reset 导致的臃肿）。最终完成时预计总计不超过 30kb。
+p.s. 本项目中除去 Babel 编译加入的臃肿代码其他部分均为手写代码，未使用任何第三方库实现。目前项目仍在持续改进中，js 打包后 13kb（主要为 Babel runtime，翻译文件及页面模板居多，感谢 hyperapp 的设计理念让我在核心代码上持续优化精简），css 9kb（web 字体和 css reset 导致的臃肿）。最终完成时预计总计不超过 ~~30kb~~(随着功能的增加、动画的添加、Web 字体资源的使用，静态脚本资源已经达到 30kb了，但还有很多想要再持续添加完善的点，最终保证不超过 100kb 吧)。
 
 ## 技术细节（Tricks）
 

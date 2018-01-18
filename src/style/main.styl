@@ -104,18 +104,37 @@
 
 #portfilio .bg
   background: url('../public/bg_portfilio.jpg') 0 -270px;
-#contact .bg
-  background: url('../public/bg_contact.jpg') 0 -250px;
-#resume .bg
-  background: url('../public/bg_resume.jpg') 0 -276px;
-#resume, #portfilio, #contact
+#resume
   .bg
-    width: 100%;
-    height: 200px;
-    margin-bottom: 30px;
-    background-size: cover;
-    opacity: 0.6;
-    box-shadow: 0px 0px 5px #333;
+    background: url('../public/bg_resume.jpg') 0 -276px;
+  aside
+    order 2
+    li
+      list-style none !important
+#contact
+  .bg
+    background: url('../public/bg_contact.jpg') 0 -250px;
+  aside
+    order 1
+  section
+    order 2
+#resume, #portfilio, #contact
+  display flex
+  flex-flow row wrap
+  aside
+    flex 1
+    padding 0 20px
+    min-width 250px
+  section
+    flex 3
+  .bg
+    display block
+    width 100%
+    height 200px
+    margin-bottom 30px
+    background-size cover
+    opacity 0.6
+    box-shadow 0px 0px 5px #333
   section
     padding 0 20px
   h3
@@ -138,45 +157,51 @@
       width 30px
       height 30px
       font-size 30px
-  .timeline
+  ul
+    &.timeline li
+      border-left 1px solid $color1
+      list-style none
     li
       margin-bottom 20px
       line-height 17px
       margin-left 11px
       font-size 13px
-      border-left 1px solid $color1
       padding-left 15px
+      list-style circle inside
     h4
       font-weight bold
       line-height 24px
       font-size 15px
+      span,strong
+        font-size 14px
+        line-height 17px
+        font-weight normal
       span
         float right
-        line-height 17px
         color $color1
-        font-size 14px
-        font-weight normal
         padding 2px 6px
     p
       margin-top 5px
   .circle
+    display inline-block
+    margin 0 3px
     width 10px
     height 10px
-    background $color1
-    border 1px solid $color1
+    background $color4
+    border 1px solid $color4
     border-radius 50%
     position relative
     &.disable
-      background-color $color4
-      border-color $clor4
+      background-color $color1
+      border-color $color1
       &::before
-        border-color $color4
+        border-color $color1
     &::before
       content " "
       display block
       width 14px
       height 14px
-      border 1px solid $color1
+      border 1px solid $color4
       border-radius 50%
       position absolute
       left -3px
