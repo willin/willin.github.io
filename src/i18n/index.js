@@ -8,4 +8,7 @@ const langs = {
   tw
 };
 
-module.exports = lang => langs[lang];
+module.exports = (t, lang) => {
+  if (langs[lang] && langs[lang][t]) return langs[lang][t];
+  return t.split('_').map(x => x.replace(/^(\w)/, w => w.toUpperCase())).join(' ');
+};

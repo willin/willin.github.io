@@ -1,7 +1,6 @@
+
 const PREFIX = 'w-';
 
-export default {
-  fetch: key => localStorage.getItem(PREFIX + key),
-  save: (key, val) => localStorage.setItem(PREFIX + key, val)
-};
+exports.fetch = key => localStorage.getItem(PREFIX + key) || '';
 
+exports.save = (key, val) => localStorage.setItem(PREFIX + key, val);

@@ -1,0 +1,54 @@
+*, *::before, *::after
+  box-sizing border-box
+  transition all 300ms ease-in-out
+
+body
+  color $color4
+  background url('../public/bg.png') #f7f7f7
+  font-family Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
+
+.hidden
+  max-height 0
+  overflow hidden
+  height auto
+
+#container
+  margin 0 auto
+  width 860px
+  max-width 100%
+  margin-bottom 20px
+  margin-top 30px
+
+  a, a:visited
+    color $color3
+    text-decoration none
+    border-bottom 1px dashed
+    padding-bottom 2px
+  a.active, a:hover, a:active
+    color inherit
+
+header
+  height 60px
+  margin-bottom 20px
+  text-align center
+  h2
+    font-family wzl
+    font-size 30px
+    font-weight 900
+    color $color2
+    line-height 40px
+  h4
+    font-size 15px
+    line-height 20px
+    color $color3
+
+footer
+  text-align center
+  margin-top 20px
+  font-size 12px
+  p
+    padding 3px 0
+  ul, li
+    display inline
+  li
+    padding 0 3px

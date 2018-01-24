@@ -1,6 +1,7 @@
 import { app } from 'hyperapp';
 import state from './state';
 import actions from './actions';
-import layout from './layout';
+import route from './route';
 
-app(state, actions, layout, document.getElementById('app'));
+const main = app(state, actions, route, document.getElementById('app'));
+main.setRoute(window.location.pathname);

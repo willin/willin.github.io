@@ -1,4 +1,4 @@
-export const getLang = () => {
+exports.getLang = () => {
   const lang = navigator.language || 'en-US';
   // eslint-disable-next-line no-bitwise
   if (~lang.indexOf('HK') || ~lang.indexOf('TW')) return 'tw';
@@ -7,11 +7,7 @@ export const getLang = () => {
   return 'en';
 };
 
-export const $on = (target, type, callback, useCapture) => {
+exports.$on = (target, type, callback, useCapture) => {
   target.addEventListener(type, callback, !!useCapture);
 };
 
-export const router = () => {
-  const route = window.location.hash.split('/')[1] || 'profile';
-  return ['profile', 'resume', 'portfilio', 'contact'].indexOf(route) !== -1 ? route : 'profile';
-};

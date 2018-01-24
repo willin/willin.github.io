@@ -1,9 +1,9 @@
 module.exports = {
-  willin: '王之琳',
+  willin_wang: '王之琳',
   subtitle: '资深 JS 全栈工程师',
   introduction: '从小学开始学习编程，初中开始写博客。拥有超十年的项目及产品研发经验，熟悉软件生命周期的各个阶段流程。目前在南京领导一支十人左右的初创公司研发团队，同时也积极开源项目及经验心得分享。',
   motto: '不求做伟大的人，却要做大写的人。',
-  profile: '个人资料',
+  '/': '个人资料',
   resume: '简历',
   portfilio: '作品',
   contact: '联系',

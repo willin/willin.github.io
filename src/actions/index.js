@@ -1,27 +1,22 @@
-import store from '../store';
-import i18n from '../i18n';
-import { router } from '../utils';
+import { save } from '../store';
 
-export default {
-  changeLang: lang => () => {
-    store.save('lang', lang);
+module.exports = {
+  setLocale: locale => () => {
+    save('locale', locale);
     return {
-      lang,
-      i18n: i18n(lang)
+      locale
     };
   },
-  setRoute: route => () => ({ route }),
-  setView: () => (_, actions) => {
-    const route = router();
-    actions.setRoute(route);
+  setRoute: route => () => {
+    const elm = document.querySelector('.hidden');
+    if (elm) {
+      elm.style.maxHeight = '0px';
+    }
     setTimeout(() => {
-      const items = document.getElementsByClassName('hidden');
-      for (let i = 0; i < items.length; i += 1) {
-      // eslint-disable-next-line no-param-reassign
-        items[i].style.maxHeight = '0px';
-      }
-      const view = document.getElementById(route);
+      const view = document.querySelector('.hidden');
       view.style.maxHeight = `${view.scrollHeight}px`;
-    }, 50);
+    }, 300);
+    return { route };
   }
 };
+

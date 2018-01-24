@@ -2094,9 +2094,9 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
 
-hyperapp@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.0.1.tgz#4acbe3c432709c7ec29fa320d9d2e54a47e6a17f"
+hyperapp@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.0.2.tgz#aa3e03434650297368339a9465cb0b489fb49332"
 
 iconv-lite@^0.4.17:
   version "0.4.19"

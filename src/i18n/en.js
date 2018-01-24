@@ -1,14 +1,9 @@
 module.exports = {
-  willin: 'Willin Wang',
   subtitle: 'Full Stack Developer',
   // eslint-disable-next-line max-len
   introduction: 'Learn programming since primary shool. Over 10 years experience of project or production developmen. Familiar with the workflow of the software life cycle. Currently leading a startup team of about 10 developers in Nanjing. Active in open sources.',
+  '/': 'Profile',
   motto: 'To be Willin is to be willing.',
-  profile: 'Profile',
-  resume: 'Resume',
-  portfilio: 'Portfilio',
-  contact: 'Contact',
-  social: 'Social',
   tags: [
     ['EDU', 'BE, Jinling Institude of Technology'],
     ['Position', 'CTO @ AirDwing, Nanjing, China'],
@@ -16,10 +11,6 @@ module.exports = {
     ['Mobile', '(+86)155-7797-4423'],
     ['Email', 'willin@willin.org']
   ],
-  programming_skills: 'Programming Skills',
-  database_skills: 'Database Skills',
-  tool_skills: 'Tool Skills',
-  present: 'Present',
   cto: 'CTO',
   airdwing: 'Nanjing Dwing Aviation Technology Co,.Ltd.',
   airdwing_desc: '',
@@ -29,11 +20,6 @@ module.exports = {
   publication: 'Publication',
   opensource: 'Open Source',
   works: 'Others',
-  more: 'More',
-  author: 'Author',
-  translator: 'Translator',
-  owner: 'Owner',
-  contributor: 'Contributor',
   leader: '《Leader —— Mastering your team》（in Chinese）',
   graphql: 'GraphQL Doc translated in Chinese',
   anime: 'Anime.js Doc translated in Chinese',
