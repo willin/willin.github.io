@@ -26,6 +26,23 @@ module.exports = {
     ]
   },
   plugins: [
+    { src: '~/plugins/toys.js', ssr: false },
     { src: '~/plugins/google.js', ssr: false }
-  ]
+  ],
+  router: {
+    // middleware: 'i18n'
+  },
+  generate: {
+    fallback: true,
+    routes: ['/']
+  },
+  build: {
+    extractCSS: true,
+    extend(config, { isDev }) {
+      if (isDev) {
+        // eslint-disable-next-line no-param-reassign
+        config.devtool = '#source-map';
+      }
+    }
+  }
 };

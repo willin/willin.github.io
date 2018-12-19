@@ -1,6 +1,6 @@
 {
   "name": "willin.github.io",
-  "version": "1.0.0",
+  "version": "19.0.0",
   "scripts": {
     "dev": "node bin/fetch && nuxt",
     "generate": "node bin/fetch && nuxt generate",
