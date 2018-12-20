@@ -33,7 +33,7 @@ export default {
 }
 
 #app {
-  background-image: url(/bg.jpg);
+  background-image: url(/images/bg.jpg);
   background-size: cover;
   background-blend-mode: soft-light;
   background-color: var(--bg-color);

@@ -22,7 +22,7 @@ h1 {
   height: 10vmin;
   margin: 0 0.2em;
   animation: move-around 4s infinite;
-  background-image: url(/ww.png);
+  background-image: url(/images/ww.png);
   background-size: 20vmin 10vmin;
   background-position: 0 0;
 }
