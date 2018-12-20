@@ -1,0 +1,39 @@
+<template>
+  <footer>
+    <p>Copyright &copy; 2002~{{ year }} Willin Wang</p>
+    <p>
+      当前主题： {{ theme }}
+      <a href="javascript:void(0);" @click="toggleTheme">
+        切换主题
+      </a>
+    </p>
+  </footer>
+</template>
+
+<script>
+import { mapMutations } from 'vuex';
+
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear()
+    };
+  },
+  computed: {
+    theme() {
+      return this.$store.state.theme;
+    }
+  },
+  methods: {
+    ...mapMutations({
+      toggleTheme: 'toggleTheme'
+    })
+  }
+};
+</script>
+
+<style>
+footer {
+  text-align: center;
+}
+</style>

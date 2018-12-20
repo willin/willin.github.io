@@ -1,11 +1,13 @@
 <template>
-  <h1>
-    Willin
-    <span id="logo">
+  <header>
+    <h1>
+      Willin
+      <span id="logo">
       &nbsp;
-    </span>
-    Wang
-  </h1>
+      </span>
+      Wang
+    </h1>
+  </header>
 </template>
 
 <style scoped>

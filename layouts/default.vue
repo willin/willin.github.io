@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
+  <div id="app" :class="theme">
     <v-header />
     <nuxt />
+    <v-footer />
   </div>
 </template>
 
 <script>
 /* eslint-disable max-len */
 import VHeader from '~/components/layouts/header';
+import VFooter from '~/components/layouts/footer';
 
 export default {
   components: {
-    VHeader
+    VHeader,
+    VFooter
+  },
+  computed: {
+    theme() {
+      return this.$store.state.theme;
+    }
   }
 };
 </script>
@@ -21,7 +29,7 @@ export default {
 <style src="~/assets/themes.css"></style>
 <style>
 *,*::before,*::after {
-  transition: all 500ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
 #app {

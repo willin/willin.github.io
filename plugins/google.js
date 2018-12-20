@@ -1,13 +1,13 @@
 /* eslint-disable */
 export default ({ app }) => {
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: 'ca-pub-5059418763237956',
-    enable_page_level_ads: true
-  });
   /*
    ** Only run on client-side and only in production mode
    */
   if (process.env.NODE_ENV !== 'production') return;
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: 'ca-pub-5059418763237956',
+    enable_page_level_ads: true
+  });
   /*
    ** Include Google Analytics Script
    */
