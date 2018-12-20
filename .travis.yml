@@ -11,10 +11,10 @@ before_script:
   - git config user.name "Travis-CI"
   - git config user.email "willin@willin.org"
 script:
-  - npm run genrate
+  - npm run generate
   - cd dist
   - git init
   - git add .
   - git commit -m "[skip ci] Travis Auto Deployed"
-  - git push --force "https://${GH_TOKEN}@github.com/willin/willin.github.io.git" master:master
+  # - git push --force "https://${GH_TOKEN}@github.com/willin/willin.github.io.git" master:master
   - git push --force "https://willin:${CODING_TOKEN}@git.dev.tencent.com/willin/willin.wang.git" master:master
