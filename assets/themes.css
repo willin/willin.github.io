@@ -1,0 +1,14 @@
+/* dark theme default */
+:root {
+  --bg-color: #3e3f41;
+  --bg-text-color: #b8babc;
+  --icon-red: #ff5253;
+  --icon-yellow: #e9bf3d;
+  --icon-green: #52c33e;
+}
+
+/* light theme */
+.light {
+  --bg-color: #b8babc;
+  --bg-text-color: #3e3f41;
+}

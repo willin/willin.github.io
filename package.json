@@ -7,18 +7,24 @@
     "lint": "eslint --fix --ext .js,.vue --ignore-path .eslintignore .",
     "precommit": "npm run lint"
   },
+  "config": {
+    "nuxt": {
+      "port": "6300"
+    }
+  },
   "private": true,
   "repository": "git@github.com:willin/willin.github.io.git",
   "author": "willin <willin@willin.org>",
   "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^2.3.4"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-config-dwing": "^1.2.2",
+    "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-vue": "^5.0.0-beta.6"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "nuxt": "^2.3.4"
   }
 }

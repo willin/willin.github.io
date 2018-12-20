@@ -33,8 +33,8 @@ module.exports = {
     // middleware: 'i18n'
   },
   generate: {
-    fallback: true,
-    routes: ['/']
+    // routes: ['/'],
+    fallback: true
   },
   build: {
     extractCSS: true,
