@@ -587,6 +587,10 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
+"@kazupon/vue-i18n-loader@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@kazupon/vue-i18n-loader/-/vue-i18n-loader-0.3.0.tgz#e068de2d75d891275814ae28ad1fcaf1b537694f"
+
 "@nuxt/babel-preset-app@2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.3.4.tgz#e8ef218a8ce58f854aa3c822bd5ebcb7c3d1c917"
@@ -963,6 +967,10 @@ acorn-dynamic-import@^3.0.0:
 acorn-jsx@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.1.tgz#32a064fd925429216a09b141102bfdd185fae40e"
+
+acorn-walk@^6.1.0:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-6.1.1.tgz#d363b66f5fac5f018ff9c3a1e7b6f8e310cc3913"
 
 acorn@^5.0.0, acorn@^5.6.2, acorn@^5.7.3:
   version "5.7.3"
@@ -3379,6 +3387,10 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
+
 js-levenshtein@^1.1.3:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.4.tgz#3a56e3cbf589ca0081eb22cd9ba0b1290a16d26e"
@@ -3965,6 +3977,18 @@ num2fraction@^1.2.2:
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
+
+nuxt-i18n@^5.4.4:
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-5.4.4.tgz#0bc9d3cf6480806e855e3caaf00b300c564315e8"
+  dependencies:
+    "@kazupon/vue-i18n-loader" "^0.3.0"
+    acorn "^6.0.2"
+    acorn-walk "^6.1.0"
+    cookie "^0.3.1"
+    js-cookie "^2.2.0"
+    vue-i18n "^8.2.1"
+    vue-i18n-extensions "^0.2.0"
 
 nuxt@^2.3.4:
   version "2.3.4"
@@ -6022,6 +6046,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vm2@^3.5.0:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.6.4.tgz#88b27a9f328a0630671841363692a57d24dead33"
+
 vue-eslint-parser@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-4.0.3.tgz#80cf162e484387b2640371ad21ba1f86e0c10a61"
@@ -6036,6 +6064,16 @@ vue-eslint-parser@^4.0.2:
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.1.tgz#b2d3d95402a811602380783ea4f566eb875569a2"
+
+vue-i18n-extensions@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n-extensions/-/vue-i18n-extensions-0.2.0.tgz#be566a1988f0d736a8d6cea4cc1462ffca520bc6"
+  dependencies:
+    vm2 "^3.5.0"
+
+vue-i18n@^8.2.1:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.5.0.tgz#e6679b7fd1a13124c05565dabc28302b7cc23af0"
 
 vue-loader@^15.4.2:
   version "15.4.2"

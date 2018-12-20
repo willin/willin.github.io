@@ -18,7 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
-    "nuxt": "^2.3.4"
+    "nuxt": "^2.3.4",
+    "nuxt-i18n": "^5.4.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
