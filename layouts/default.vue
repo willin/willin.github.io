@@ -29,7 +29,7 @@ export default {
 <style src="~/assets/themes.css"></style>
 <style>
 *,*::before,*::after {
-  transition: all 350ms ease-in-out;
+  transition: all 350ms linear;
 }
 
 #app {

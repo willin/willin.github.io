@@ -2,8 +2,9 @@
   "name": "willin.github.io",
   "version": "19.0.0",
   "scripts": {
-    "dev": "node bin/fetch && nuxt",
-    "generate": "node bin/fetch && nuxt generate",
+    "dev": "nuxt",
+    "build": "node bin/fetch",
+    "generate": "npm run build && nuxt generate",
     "lint": "eslint --fix --ext .js,.vue --ignore-path .eslintignore .",
     "precommit": "npm run lint"
   },

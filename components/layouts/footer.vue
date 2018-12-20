@@ -7,6 +7,17 @@
         切换主题
       </a>
     </p>
+    <p>
+      <template v-for="locale in $i18n.locales">
+        <nuxt-link
+          v-if="locale.code !== $i18n.locale"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+        >
+          {{ locale.name }}
+        </nuxt-link>
+      </template>
+    </p>
   </footer>
 </template>
 

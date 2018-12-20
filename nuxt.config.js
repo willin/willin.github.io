@@ -25,6 +25,25 @@ module.exports = {
       { src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', async: 'async' }
     ]
   },
+  modules: [
+    ['nuxt-i18n', {
+      locales: [
+        { name: '简体中文', code: 'zh', iso: 'zh-CN', file: 'zh.js' },
+        { name: 'English', code: 'en', iso: 'en-US', file: 'en.js' }
+      ],
+      lazy: true,
+      langDir: 'locales/',
+      strategy: 'prefix_except_default',
+      defaultLocale: 'zh',
+      detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'i18n_redirected'
+      },
+      vueI18n: {
+        fallbackLocale: 'en'
+      }
+    }]
+  ],
   plugins: [
     { src: '~/plugins/toys.js', ssr: false },
     { src: '~/plugins/google.js', ssr: false }
