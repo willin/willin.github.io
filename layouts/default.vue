@@ -52,6 +52,7 @@ div,h1,h2,h3,h4,h5,h6 {
 }
 
 body {
+  font-size: 1.5vmin;
   font-family: specialSymbol,DINRegular,-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei",微软雅黑,sans-serif;
 }
 </style>

@@ -7,23 +7,45 @@
       </span>
       Wang
     </h1>
+    <h2>
+      {{ $t('subtitle') }}
+    </h2>
+    <p>
+      {{ $t('motto') }}
+    </p>
   </header>
 </template>
 
-<style scoped>
-h1 {
-  font-size: 6vmin;
-  line-height: 10vmin;
-  margin: 0.5em 0;
+<style>
+header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
+
+header h1 {
+  font-size: 3rem;
+  line-height: 5rem;
+}
+header h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0.25em 0;
+}
+header p {
+  order: -1;
+  margin-bottom: 0.5em;
+}
+
 #logo {
   display: flex;
-  width: 10vmin;
-  height: 10vmin;
+  width: 5rem;
+  height: 5rem;
   margin: 0 0.2em;
   animation: move-around 4s infinite;
   background-image: url(/images/ww.png);
-  background-size: 20vmin 10vmin;
+  background-size: 10rem 5rem;
   background-position: 0 0;
 }
 .light #logo {

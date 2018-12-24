@@ -1,5 +1,12 @@
 <template>
-  <h1>{{ $t('welcome') }}</h1>
+  <main>
+    <nav>
+      首页 著作 项目
+    </nav>
+    <article>
+      概要统计、链接
+    </article>
+  </main>
 </template>
 
 <script>
@@ -13,6 +20,7 @@ export default {
   },
   mounted() {
     console.log(this.github);
+    window.test = this;
   }
 };
 </script>
