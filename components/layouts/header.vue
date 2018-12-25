@@ -7,9 +7,6 @@
       </span>
       Wang
     </h1>
-    <h2>
-      {{ $t('subtitle') }}
-    </h2>
     <p>
       {{ $t('motto') }}
     </p>
@@ -39,6 +36,7 @@ header p {
 }
 
 #logo {
+  user-select: none;
   display: flex;
   width: 5rem;
   height: 5rem;
