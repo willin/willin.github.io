@@ -10,6 +10,17 @@
     <p>
       {{ $t('motto') }}
     </p>
+    <nav>
+      <nuxt-link to="/">
+        简述
+      </nuxt-link>
+      <nuxt-link to="/writings">
+        著作
+      </nuxt-link>
+      <nuxt-link to="/projects">
+        项目
+      </nuxt-link>
+    </nav>
   </header>
 </template>
 

@@ -27,6 +27,8 @@ export default {
 
 <style src="~/assets/reset.css"></style>
 <style src="~/assets/themes.css"></style>
+<style src="luminous-lightbox/dist/luminous-basic.min.css"></style>
+
 <style>
 *,*::before,*::after {
   transition: all 350ms linear;
