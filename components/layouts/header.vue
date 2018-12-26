@@ -11,14 +11,20 @@
       {{ $t('motto') }}
     </p>
     <nav>
-      <nuxt-link to="/">
+      <nuxt-link :to="localePath('index')">
         简述
       </nuxt-link>
-      <nuxt-link to="/writings">
+      <nuxt-link :to="localePath('writings')">
         著作
       </nuxt-link>
-      <nuxt-link to="/projects">
+      <nuxt-link :to="localePath('projects')">
         项目
+      </nuxt-link>
+      <nuxt-link :to="localePath('resume')">
+        简历
+      </nuxt-link>
+      <nuxt-link :to="localePath('hire')">
+        招聘
       </nuxt-link>
     </nav>
   </header>

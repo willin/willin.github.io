@@ -33,7 +33,7 @@ module.exports = {
       ],
       lazy: true,
       langDir: 'locales/',
-      strategy: 'prefix_except_default',
+      strategy: 'prefix_and_default',
       defaultLocale: 'zh',
       detectBrowserLanguage: {
         useCookie: true,
