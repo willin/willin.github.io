@@ -33,12 +33,13 @@ module.exports = {
       ],
       lazy: true,
       langDir: 'locales/',
-      strategy: 'prefix_except_default',
+      strategy: 'prefix',
       defaultLocale: 'zh',
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: 'i18n_redirected'
       },
+      rootRedirect: 'en',
       vueI18n: {
         fallbackLocale: 'en'
       }
