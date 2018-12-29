@@ -46,6 +46,7 @@ module.exports = {
     }]
   ],
   plugins: [
+    { src: '~/plugins/global.js' },
     { src: '~/plugins/toys.js', ssr: false },
     { src: '~/plugins/google.js', ssr: false }
   ],
