@@ -39,9 +39,9 @@ module.exports = {
         useCookie: true,
         cookieKey: 'i18n_redirected'
       },
-      rootRedirect: 'en',
+      rootRedirect: 'zh',
       vueI18n: {
-        fallbackLocale: 'en'
+        fallbackLocale: 'zh'
       }
     }]
   ],

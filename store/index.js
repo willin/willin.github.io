@@ -2,7 +2,7 @@
 export const state = () => ({
   theme: 'light',
   i18n: {
-    locale: '',
+    locale: 'zh',
     messages: {}
   }
 });
