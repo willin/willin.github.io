@@ -12,3 +12,10 @@
   --bg-color: #b8babc;
   --bg-text-color: #3e3f41;
 }
+
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo Regular'), local('Exo-Regular'), url(/exo.woff) format('woff');
+}
