@@ -42,11 +42,27 @@
         </ul>
         <hr>
       </section>
+      <section>
+        Donate:
+        <ul>
+          <li>
+            <a href="/images/wx.png" class="gallery">
+              微信
+            </a>
+          </li>
+          <li>
+            <a href="/images/alipay.png" class="gallery">
+              支付宝
+            </a>
+          </li>
+        </ul>
+      </section>
     </article>
   </main>
 </template>
 
 <script>
+import { Luminous } from 'luminous-lightbox';
 import v0 from '~/assets/cache/v0';
 import github from '~/assets/cache/github';
 import codewars from '~/assets/cache/codewars';
@@ -60,8 +76,13 @@ export default {
     };
   },
   mounted() {
-    console.log(this.codewars);
-    window.test = this;
+    setTimeout(() => {
+      const images = document.querySelectorAll('.gallery');
+      for (let i = 0; i < images.length; i += 1) {
+        // eslint-disable-next-line no-new
+        new Luminous(images[i]);
+      }
+    }, 300);
   }
 };
 </script>

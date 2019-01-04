@@ -65,7 +65,6 @@ export default {
     };
   },
   mounted() {
-    window.test = this;
     setTimeout(() => {
       // eslint-disable-next-line no-new
       new Luminous(document.querySelector('.gallery'));
