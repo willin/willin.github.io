@@ -43,16 +43,26 @@
         <hr>
       </section>
       <section>
-        Donate:
+        {{ $t('donate.text') }}:
         <ul>
           <li>
             <a href="/images/wx.png" class="gallery">
-              微信
+              {{ $t('donate.wechat') }}
             </a>
           </li>
           <li>
             <a href="/images/alipay.png" class="gallery">
-              支付宝
+              {{ $t('donate.alipay') }}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.patreon.com/willin" target="_blank">
+              {{ $t('donate.patreon') }}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.paypal.me/willinwang" target="_blank">
+              {{ $t('donate.paypal') }}
             </a>
           </li>
         </ul>

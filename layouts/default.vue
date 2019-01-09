@@ -57,4 +57,11 @@ body {
   font-size: 1.5vmin;
   font-family: 'Exo',specialSymbol,DINRegular,-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei",微软雅黑,sans-serif;
 }
+
+a {
+  color: var(--link-color);
+}
+a, a:link, a:visited,a:hover {
+  text-decoration: none;
+}
 </style>

@@ -2,6 +2,7 @@
 :root {
   --bg-color: #3e3f41;
   --bg-text-color: #b8babc;
+  --link-color: #69f;
   --icon-red: #ff5253;
   --icon-yellow: #e9bf3d;
   --icon-green: #52c33e;
@@ -11,6 +12,7 @@
 .light {
   --bg-color: #b8babc;
   --bg-text-color: #3e3f41;
+  --link-color: #f60;
 }
 
 @font-face {

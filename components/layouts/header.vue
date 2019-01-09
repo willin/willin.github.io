@@ -52,6 +52,19 @@ header p {
   margin-bottom: 0.5em;
 }
 
+header nav {
+  margin: 0.5em 0;
+}
+header nav a {
+  padding: 0.1em 0.25em;
+  color: var(--bg-color);
+  background-color: var(--bg-text-color);
+}
+header nav a:hover, header nav a.nuxt-link-exact-active {
+  color: var(--bg-text-color);
+  background-color: var(--bg-color);
+}
+
 #logo {
   user-select: none;
   display: flex;
