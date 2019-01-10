@@ -24,7 +24,7 @@
         简历
       </nuxt-link>
       <nuxt-link :to="localePath('hire')">
-        招聘
+        招聘&nbsp;
       </nuxt-link>
     </nav>
   </header>

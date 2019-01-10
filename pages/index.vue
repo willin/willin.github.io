@@ -40,33 +40,8 @@
             Solutions: {{ codewars.total }}
           </li>
         </ul>
-        <hr>
       </section>
-      <section>
-        {{ $t('donate.text') }}:
-        <ul>
-          <li>
-            <a href="/images/wx.png" class="gallery">
-              {{ $t('donate.wechat') }}
-            </a>
-          </li>
-          <li>
-            <a href="/images/alipay.png" class="gallery">
-              {{ $t('donate.alipay') }}
-            </a>
-          </li>
-          <li>
-            <a href="https://www.patreon.com/willin" target="_blank">
-              {{ $t('donate.patreon') }}
-            </a>
-          </li>
-          <li>
-            <a href="https://www.paypal.me/willinwang" target="_blank">
-              {{ $t('donate.paypal') }}
-            </a>
-          </li>
-        </ul>
-      </section>
+      <Donate />
     </article>
   </main>
 </template>
@@ -76,8 +51,12 @@ import { Luminous } from 'luminous-lightbox';
 import v0 from '~/assets/cache/v0';
 import github from '~/assets/cache/github';
 import codewars from '~/assets/cache/codewars';
+import Donate from '~/components/donate';
 
 export default {
+  components: {
+    Donate
+  },
   data() {
     return {
       v0,

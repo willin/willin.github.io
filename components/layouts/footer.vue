@@ -25,7 +25,9 @@ export default {
 
 <style>
 footer {
+  margin-top: 1em;
   text-align: center;
+  font-size: 0.8em;
 }
 .switch {
   display: inline;

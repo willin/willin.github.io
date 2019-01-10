@@ -60,6 +60,7 @@ body {
 
 a {
   color: var(--link-color);
+  padding-left: 0.5em !important;
 }
 a, a:link, a:visited,a:hover {
   text-decoration: none;
