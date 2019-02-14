@@ -17,8 +17,8 @@
       <nuxt-link :to="localePath('writings')">
         著作
       </nuxt-link>
-      <nuxt-link :to="localePath('projects')">
-        项目
+      <nuxt-link :to="localePath('opensource')">
+        开源
       </nuxt-link>
       <nuxt-link :to="localePath('resume')">
         简历

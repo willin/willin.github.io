@@ -28,6 +28,7 @@ export default {
 <style src="~/assets/reset.css"></style>
 <style src="~/assets/themes.css"></style>
 <style src="luminous-lightbox/dist/luminous-basic.min.css"></style>
+<style src="~/assets/responsive.css"></style>
 
 <style>
 *,*::before,*::after {
@@ -64,5 +65,8 @@ a {
 }
 a, a:link, a:visited,a:hover {
   text-decoration: none;
+}
+main {
+  max-width: 960px;
 }
 </style>

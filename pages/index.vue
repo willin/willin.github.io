@@ -2,6 +2,14 @@
   <main>
     <article>
       <section>
+        <p>
+          Location: Nanjing, China
+        </p>
+        <p>
+          Job: Freelancer
+        </p>
+      </section>
+      <section>
         <ul>
           <li>
             Github
