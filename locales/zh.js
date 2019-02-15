@@ -26,6 +26,8 @@ export default {
     solutions: '解题'
   },
   projects: {
+    menu: '在线目录',
+    latest: '最近更新',
     wechat_feed: '公众号',
     v0: '初瘦'
   },

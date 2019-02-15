@@ -26,6 +26,8 @@ export default {
     solutions: 'Solutions'
   },
   projects: {
+    menu: 'View More Details',
+    latest: 'Latest Updates',
     wechat_feed: 'Wechat Media',
     v0: 'assholev0'
   },
