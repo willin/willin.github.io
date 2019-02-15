@@ -67,6 +67,9 @@ a, a:link, a:visited,a:hover {
   text-decoration: none;
 }
 main {
-  max-width: 960px;
+  max-width: 480px;
+}
+section {
+  margin-top: 1em;
 }
 </style>

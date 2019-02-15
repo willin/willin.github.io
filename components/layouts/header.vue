@@ -12,19 +12,19 @@
     </p>
     <nav>
       <nuxt-link :to="localePath('index')">
-        简述
+        {{ $t('nav.index') }}
       </nuxt-link>
       <nuxt-link :to="localePath('writings')">
-        著作
+        {{ $t('nav.writings') }}
       </nuxt-link>
       <nuxt-link :to="localePath('opensource')">
-        开源
+        {{ $t('nav.opensource') }}
       </nuxt-link>
       <nuxt-link :to="localePath('resume')">
-        简历
+        {{ $t('nav.resume') }}
       </nuxt-link>
       <nuxt-link :to="localePath('hire')">
-        招聘&nbsp;
+        {{ $t('nav.hire') }}&nbsp;
       </nuxt-link>
     </nav>
   </header>

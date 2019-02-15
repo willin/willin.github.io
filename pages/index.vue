@@ -3,51 +3,32 @@
     <article>
       <section>
         <p>
-          Location: Nanjing, China
+          {{ $t('index.location') }}: {{ $t('index.nanjing') }}
         </p>
         <p>
-          Job: Freelancer
+          {{ $t('index.job') }}: {{ $t('index.freelancer') }}
         </p>
       </section>
       <section>
-        <ul>
-          <li>
-            Github
-          </li>
-          <li>
-            Followers: {{ github.count.followers }}
-          </li>
-          <li>
-            Projects: {{ github.count.contributed + github.count.repositories }}
-          </li>
-        </ul>
-        <hr>
+        <h3>Github</h3>
+        <nav>
+          {{ $t('unit.followers') }}: <strong>{{ github.count.followers }}</strong> |
+          {{ $t('unit.projects') }}: <strong>{{ github.count.contributed + github.count.repositories }}</strong>
+        </nav>
       </section>
       <section>
-        <ul>
-          <li>V0</li>
-          <li>
-            Posts: {{ v0.postcount }}
-          </li>
-          <li>
-            WordCount: {{ v0.wordcount }}
-          </li>
-        </ul>
-        <hr>
+        <h3>{{ $t('projects.wechat_feed') }}: {{ $t('projects.v0') }}</h3>
+        <nav>
+          {{ $t('unit.posts') }}: <strong>{{ v0.postcount }}</strong> |
+          {{ $t('unit.wordcount') }}: <strong>{{ v0.wordcount }}</strong>
+        </nav>
       </section>
       <section>
-        <ul>
-          <li>Codewars</li>
-          <li>
-            {{ codewars.level }}
-          </li>
-          <li>
-            Position: #{{ codewars.position }}
-          </li>
-          <li>
-            Solutions: {{ codewars.total }}
-          </li>
-        </ul>
+        <h3>CodeWars &nbsp; <strong>{{ codewars.level }}</strong></h3>
+        <nav>
+          {{ $t('index.rank') }}: <strong>#{{ codewars.position }}</strong> |
+          {{ $t('index.solutions') }}: <strong>{{ codewars.total }}</strong>
+        </nav>
       </section>
       <Donate />
     </article>
