@@ -1,7 +1,7 @@
 <template>
   <main>
     <article>
-      <section>
+      <!-- <section>
         <ul>
           <li>
             小程序： <a href="/images/mpv0.jpg" class="gallery">
@@ -13,40 +13,37 @@
           </li>
         </ul>
         <hr>
+      </section> -->
+      <section>
+        <h2>Github: &nbsp; <strong>willin</strong></h2>
+        <nav>
+          <p>
+            {{ $t('unit.followers') }}: <strong>{{ github.count.followers }}</strong> |
+            {{ $t('unit.starred') }}: <strong>{{ github.count.starred }}</strong>
+          </p>
+          <p>
+            {{ $t('unit.repositories') }}: <strong>{{ github.count.repositories }}</strong> |
+            {{ $t('unit.contributed') }}: <strong>{{ github.count.contributed }}</strong>
+          </p>
+        </nav>
       </section>
       <section>
-        <ul>
-          <li>
-            Github
-          </li>
-          <li>
-            Followers: {{ github.count.followers }}
-          </li>
-          <li>
-            Repositories: {{ github.count.repositories }}
-          </li>
-          <li>
-            Contributed: {{ github.count.contributed }}
-          </li>
-          <li>
-            Starred: {{ github.count.starred }}
-          </li>
-        </ul>
-        <hr>
-      </section>
-      <section>
-        <ul>
+        <ul class="github">
           <li v-for="project in github.projects" :key="project.url">
             <a :href="project.url" target="_blank">
               {{ project.name }}
             </a>
-            <span v-if="project.primaryLanguage" :style="{color: project.primaryLanguage.color}">
-              {{ project.primaryLanguage.name }}
-            </span>
-            <br>
-            {{ project.description }}
-            <br>
-            Starred: {{ project.stargazers }} | Forks: {{ project.forks }}
+            <p>
+              <span v-if="project.primaryLanguage" class="circle" :style="{backgroundColor: project.primaryLanguage.color}">
+                &nbsp;
+              </span>
+              <span v-if="project.primaryLanguage">
+                {{ project.primaryLanguage.name }}
+              </span> |
+              Starred: {{ project.stargazers }} |
+              Forked: {{ project.forks }}
+            </p>
+            <p>{{ project.description }}</p>
           </li>
         </ul>
       </section>

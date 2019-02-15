@@ -19,7 +19,7 @@ const gql = `{
     starredRepositories {
       totalCount
     }
-    projects: repositories(first: 10, isFork: false, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}) {
+    projects: repositories(first: 6, isFork: false, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}) {
       nodes {
         name
         description

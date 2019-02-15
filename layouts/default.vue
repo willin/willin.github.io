@@ -61,6 +61,8 @@ body {
 
 a {
   color: var(--link-color);
+}
+nav a {
   padding-left: 0.5em !important;
 }
 a, a:link, a:visited,a:hover {
@@ -71,5 +73,16 @@ main {
 }
 section {
   margin-top: 1em;
+}
+.github li {
+  margin-bottom: 0.5em;
+}
+.github .circle {
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  line-height: 1em;
+  border-radius: 100%;
+  vertical-align: middle;
 }
 </style>

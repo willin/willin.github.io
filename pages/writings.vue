@@ -58,6 +58,12 @@
           </a>
           : {{ $t('projects.menu') }}
         </li>
+        <li>
+          <a href="https://sh.gg" target="_blank">
+            sh.gg
+          </a>
+          : {{ $t('projects.archives') }}
+        </li>
       </ul>
     </section>
   </main>

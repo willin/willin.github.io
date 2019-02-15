@@ -27,12 +27,16 @@ export default {
   },
   projects: {
     menu: '在线目录',
+    archives: '旧博客',
     latest: '最近更新',
     wechat_feed: '公众号',
     v0: '初瘦'
   },
   unit: {
     followers: '粉丝',
+    starred: '加星关注',
+    repositories: '创建仓库',
+    contributed: '贡献项目',
     projects: '项目',
     posts: '文章',
     wordcount: '字数'

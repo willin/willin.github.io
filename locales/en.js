@@ -27,12 +27,16 @@ export default {
   },
   projects: {
     menu: 'View More Details',
+    archives: 'Archives',
     latest: 'Latest Updates',
     wechat_feed: 'Wechat Media',
     v0: 'assholev0'
   },
   unit: {
     followers: 'Followers',
+    starred: 'Starred',
+    repositories: 'Repositories',
+    contributed: 'Contributed',
     projects: 'Projects',
     posts: 'Posts',
     wordcount: 'WordCount'
