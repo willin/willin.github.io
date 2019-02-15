@@ -31,6 +31,8 @@ export default {
     archives: 'Archives',
     latest: 'Latest Updates',
     wechat_feed: 'Wechat Media',
+    wechat_mp: 'Mini Program',
+    weiling: 'Cloud Music Hot Comments',
     v0: 'assholev0'
   },
   unit: {

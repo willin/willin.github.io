@@ -2,6 +2,14 @@
   <main>
     <article>
       <section>
+        <h2>社会活动</h2>
+        <ul>
+          <li>阿里巴巴 数字化管理专家 (2019.01)</li>
+          <li>阿里云 MVP (2018.09)</li>
+          <li>Node.js 基金会成员 (2018.05)</li>
+        </ul>
+      </section>
+      <section>
         <h2>工作经历</h2>
         <dl>
           <dt>南京大翼航空科技有限公司</dt>

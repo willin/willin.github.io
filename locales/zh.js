@@ -31,6 +31,8 @@ export default {
     archives: '旧博客',
     latest: '最近更新',
     wechat_feed: '公众号',
+    wechat_mp: '小程序',
+    weiling: '网易云音乐热评',
     v0: '初瘦'
   },
   unit: {

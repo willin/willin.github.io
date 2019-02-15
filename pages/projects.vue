@@ -3,11 +3,11 @@
     <article>
       <section>
         <h3>
-          小程序： <a href="/images/mpv0.jpg" class="gallery">
+          {{ $t('projects.wechat_mp') }}： <a href="/images/mpv0.jpg" class="gallery">
             微聆
           </a>
         </h3>
-        <p>网易云音乐热评</p>
+        <p>{{ $t('projects.weiling') }}</p>
       </section>
     </article>
   </main>
