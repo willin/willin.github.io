@@ -7,6 +7,7 @@ export default {
     index: 'Intro',
     writings: 'Writings',
     opensource: 'OS',
+    projects: 'Projects',
     resume: 'CV',
     hire: 'Hire'
   },
@@ -37,7 +38,6 @@ export default {
     starred: 'Starred',
     repositories: 'Repositories',
     contributed: 'Contributed',
-    projects: 'Projects',
     posts: 'Posts',
     wordcount: 'WordCount'
   },

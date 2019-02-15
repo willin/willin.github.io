@@ -17,6 +17,9 @@
       <nuxt-link :to="localePath('writings')">
         {{ $t('nav.writings') }}
       </nuxt-link>
+      <nuxt-link :to="localePath('projects')">
+        {{ $t('nav.projects') }}
+      </nuxt-link>
       <nuxt-link :to="localePath('opensource')">
         {{ $t('nav.opensource') }}
       </nuxt-link>

@@ -1,19 +1,6 @@
 <template>
   <main>
     <article>
-      <!-- <section>
-        <ul>
-          <li>
-            小程序： <a href="/images/mpv0.jpg" class="gallery">
-              微聆
-            </a>
-          </li>
-          <li>
-            网易云音乐热评
-          </li>
-        </ul>
-        <hr>
-      </section> -->
       <section>
         <h2>Github: &nbsp; <strong>willin</strong></h2>
         <nav>
@@ -52,7 +39,6 @@
 </template>
 
 <script>
-import { Luminous } from 'luminous-lightbox';
 import github from '~/assets/cache/github';
 
 export default {
@@ -60,12 +46,6 @@ export default {
     return {
       github
     };
-  },
-  mounted() {
-    setTimeout(() => {
-      // eslint-disable-next-line no-new
-      new Luminous(document.querySelector('.gallery'));
-    }, 300);
   }
 };
 </script>

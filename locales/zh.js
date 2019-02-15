@@ -7,6 +7,7 @@ export default {
     index: '简述',
     writings: '著作',
     opensource: '开源',
+    projects: '项目',
     resume: '简历',
     hire: '招聘'
   },
@@ -37,7 +38,6 @@ export default {
     starred: '加星关注',
     repositories: '创建仓库',
     contributed: '贡献项目',
-    projects: '项目',
     posts: '文章',
     wordcount: '字数'
   },

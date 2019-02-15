@@ -13,7 +13,7 @@
         <h3>Github</h3>
         <nav>
           {{ $t('unit.followers') }}: <strong>{{ github.count.followers }}</strong> |
-          {{ $t('unit.projects') }}: <strong>{{ github.count.contributed + github.count.repositories }}</strong>
+          {{ $t('nav.projects') }}: <strong>{{ github.count.contributed + github.count.repositories }}</strong>
         </nav>
       </section>
       <section>
