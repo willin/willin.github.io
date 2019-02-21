@@ -24,11 +24,11 @@
         {{ $t('nav.opensource') }}
       </nuxt-link>
       <nuxt-link :to="localePath('resume')">
-        {{ $t('nav.resume') }}
+        {{ $t('nav.resume') }} &nbsp;
       </nuxt-link>
-      <nuxt-link :to="localePath('hire')">
-        {{ $t('nav.hire') }}&nbsp;
-      </nuxt-link>
+      <!-- <nuxt-link :to="localePath('hire')">
+        {{ $t('nav.hire') }} &nbsp;
+      </nuxt-link> -->
     </nav>
   </header>
 </template>
