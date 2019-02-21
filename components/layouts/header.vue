@@ -14,6 +14,9 @@
       <nuxt-link :to="localePath('index')">
         {{ $t('nav.index') }}
       </nuxt-link>
+      <nuxt-link :to="localePath('service')">
+        {{ $t('nav.service') }}
+      </nuxt-link>
       <nuxt-link :to="localePath('writings')">
         {{ $t('nav.writings') }}
       </nuxt-link>

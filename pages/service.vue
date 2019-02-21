@@ -1,0 +1,22 @@
+<template>
+  <main>
+    <article>
+      <section>
+        <h2>技术顾问</h2>
+        <ul>
+          <li>创业指导</li>
+          <li>物联网（智能家居、无人机行业等）技术咨询</li>
+          <li>互联网行业应用、架构、系统等技术咨询</li>
+        </ul>
+      </section>
+      <section>
+        <h2>项目承接</h2>
+        <ul>
+          <li>微信小程序</li>
+          <li>中小型网站、软件</li>
+          <li>大型系统、平台</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</template>

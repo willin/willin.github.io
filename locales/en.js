@@ -5,6 +5,7 @@ export default {
   },
   nav: {
     index: 'Intro',
+    service: 'Service',
     writings: 'Writings',
     opensource: 'OS',
     projects: 'Projects',

@@ -5,6 +5,7 @@ export default {
   },
   nav: {
     index: '简述',
+    service: '服务',
     writings: '著作',
     opensource: '开源',
     projects: '项目',
