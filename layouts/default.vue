@@ -84,6 +84,11 @@ section {
   border-radius: 100%;
   vertical-align: middle;
 }
+
+li {
+  list-style-type: devanagari;
+  margin-left: 1em;
+}
 </style>
 
 <style src="~/assets/responsive.css"></style>

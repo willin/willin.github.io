@@ -2,7 +2,12 @@
   <main>
     <article>
       <section>
-        <h2>Github: &nbsp; <strong>willin</strong></h2>
+        <h2>
+          Github: &nbsp;
+          <a href="https://github.com/willin" target="_blank">
+            <strong>willin</strong>
+          </a>
+        </h2>
         <nav>
           <p>
             {{ $t('unit.followers') }}: <strong>{{ github.count.followers }}</strong> |

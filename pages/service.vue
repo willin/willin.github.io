@@ -17,6 +17,13 @@
           <li>大型系统、平台</li>
         </ul>
       </section>
+      <section>
+        <h2>联系方式</h2>
+        <ul>
+          <li>QQ/微信： 2539929</li>
+          <li>手机： 17095559567</li>
+        </ul>
+      </section>
     </article>
   </main>
 </template>
