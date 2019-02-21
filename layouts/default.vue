@@ -28,7 +28,6 @@ export default {
 <style src="~/assets/reset.css"></style>
 <style src="~/assets/themes.css"></style>
 <style src="luminous-lightbox/dist/luminous-basic.min.css"></style>
-<style src="~/assets/responsive.css"></style>
 
 <style>
 *,*::before,*::after {
@@ -42,7 +41,7 @@ export default {
   background-color: var(--bg-color);
   color: var(--bg-text-color);
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;/*垂直居中*/
@@ -86,3 +85,5 @@ section {
   vertical-align: middle;
 }
 </style>
+
+<style src="~/assets/responsive.css"></style>
