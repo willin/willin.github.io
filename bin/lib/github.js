@@ -6,12 +6,20 @@ const token = process.env.GH_TOKEN;
 assert.notDeepEqual(token, undefined, 'Invalid GH_Token');
 
 const gql = `{
-  user(login: "${username}"){
+  user(login: "${username}") {
     followers {
       totalCount
     }
-    repositories: repositories(first: 6, isFork: false, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}) {
+    repositories {
       totalCount
+    }
+    repositoriesContributedTo {
+      totalCount
+    }
+    starredRepositories {
+      totalCount
+    }
+    projects: repositories(first: 6, isFork: false, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}) {
       nodes {
         name
         description
@@ -27,12 +35,6 @@ const gql = `{
           totalCount
         }
       }
-    }
-    repositoriesContributedTo {
-      totalCount
-    }
-    starredRepositories {
-      totalCount
     }
   }
 }`;
@@ -52,7 +54,7 @@ module.exports = () => axios.post('https://api.github.com/graphql', { query: gql
     repositories: user.repositories.totalCount,
     contributed: user.repositoriesContributedTo.totalCount
   },
-  projects: user.repositories.nodes.map(({ name, description, url, primaryLanguage, stargazers, forks }) => ({
+  projects: user.projects.nodes.map(({ name, description, url, primaryLanguage, stargazers, forks }) => ({
     name,
     description,
     url,
