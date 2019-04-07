@@ -22,7 +22,7 @@ module.exports = {
       { rel: 'apple-touch-icon', sizes: '152x152', href: '/touch-icon-ipad-retina-precomposed.png' }
     ],
     script: [
-      { src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', async: 'async' }
+      { src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }
     ]
   },
   modules: [
