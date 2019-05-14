@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <adsbygoogle />
     <p>Copyright &copy; 2002~{{ year }} Willin Wang</p>
     <v-theme /> |
     <v-lang />

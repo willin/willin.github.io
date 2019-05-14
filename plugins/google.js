@@ -17,26 +17,4 @@ export default ({ app }) => {
    ** Set the current page
    */
   ga('create', 'UA-33096931-1', 'auto');
-  /*
-   ** Every time the route changes (fired on initialization too)
-   */
-  app.router.afterEach((to, from) => {
-    /*
-     ** We tell Google Analytics to add a `pageview`
-     */
-    ga('set', 'page', to.fullPath);
-    ga('send', 'pageview');
-    try {
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: 'ca-pub-5059418763237956',
-        enable_page_level_ads: true
-      });
-    } catch (e) { }
-  });
-  try {
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: 'ca-pub-5059418763237956',
-      enable_page_level_ads: true
-    });
-  } catch (e) { }
 };

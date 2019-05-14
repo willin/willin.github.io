@@ -20,9 +20,6 @@ module.exports = {
       { rel: 'apple-touch-icon', sizes: '76x76', href: '/touch-icon-ipad-precomposed.png' },
       { rel: 'apple-touch-icon', sizes: '120x120', href: '/touch-icon-iphone-retina-precomposed.png' },
       { rel: 'apple-touch-icon', sizes: '152x152', href: '/touch-icon-ipad-retina-precomposed.png' }
-    ],
-    script: [
-      { src: '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }
     ]
   },
   modules: [
@@ -43,6 +40,10 @@ module.exports = {
       vueI18n: {
         fallbackLocale: 'zh'
       }
+    }],
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub5059418763237956',
+      pageLevelAds: true
     }]
   ],
   plugins: [
