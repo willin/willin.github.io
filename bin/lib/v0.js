@@ -11,4 +11,8 @@ module.exports = () => axios.get('https://v0.chat/_nuxt/api/info.json')
       postcount,
       wordcount,
       posts
-    })));
+    }))).catch(() => ({
+    postcount: 0,
+    wordcount: 0,
+    posts: 0
+  }));
