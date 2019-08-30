@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@nuxtjs/google-adsense": "^1.1.3",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "luminous-lightbox": "^2.3.2",
     "nuxt": "^2.3.4",
     "nuxt-i18n": "^5.4.4"
