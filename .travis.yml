@@ -18,4 +18,4 @@ script:
   - git add .
   - git commit -m "[skip ci] Travis Auto Deployed"
   - git push --force "https://${GH_TOKEN}@github.com/willin/willin.github.io.git" master:master
-  - git push --force "https://willin:${CODING_TOKEN}@git.dev.tencent.com/willin/willin.wang.git" master:master
+#  - git push --force "https://willin:${CODING_TOKEN}@git.dev.tencent.com/willin/willin.wang.git" master:master
