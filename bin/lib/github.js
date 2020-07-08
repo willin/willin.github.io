@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const assert = require('assert');
 const axios = require('axios');
 

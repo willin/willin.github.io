@@ -23,28 +23,8 @@ module.exports = {
     ]
   },
   modules: [
-    ['nuxt-i18n', {
-      locales: [
-        { name: '简体中文', code: 'zh', iso: 'zh-CN', file: 'zh.js' },
-        { name: 'English', code: 'en', iso: 'en-US', file: 'en.js' }
-      ],
-      lazy: true,
-      langDir: 'locales/',
-      strategy: 'prefix',
-      defaultLocale: 'zh',
-      detectBrowserLanguage: {
-        useCookie: true,
-        cookieKey: 'i18n_redirected'
-      },
-      rootRedirect: 'zh',
-      vueI18n: {
-        fallbackLocale: 'zh'
-      }
-    }],
-    ['@nuxtjs/google-adsense', {
-      id: 'ca-pub5059418763237956',
-      pageLevelAds: true
-    }]
+    'nuxt-i18n',
+    '@nuxtjs/google-adsense'
   ],
   plugins: [
     { src: '~/plugins/global.js' },
@@ -66,5 +46,27 @@ module.exports = {
         config.devtool = '#source-map';
       }
     }
+  },
+  i18n: {
+    locales: [
+      { name: '简体中文', code: 'zh', iso: 'zh-CN', file: 'zh.js' },
+      { name: 'English', code: 'en', iso: 'en-US', file: 'en.js' }
+    ],
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'prefix',
+    defaultLocale: 'zh',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected'
+    },
+    rootRedirect: 'zh',
+    vueI18n: {
+      fallbackLocale: 'zh'
+    }
+  },
+  'google-adsense': {
+    id: 'ca-pub5059418763237956',
+    pageLevelAds: true
   }
 };

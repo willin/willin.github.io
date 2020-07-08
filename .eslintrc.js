@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const path = require('path');
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    'dwing',
+    'willin',
     'plugin:vue/recommended'
   ],
   rules: {
@@ -36,11 +37,11 @@ module.exports = {
               '~': path.resolve(__dirname),
               '~~': path.resolve(__dirname),
               '@': path.resolve(__dirname),
-              '@@': path.resolve(__dirname),
+              '@@': path.resolve(__dirname)
             }
           }
         }
       }
     }
   }
-}
+};

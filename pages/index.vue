@@ -40,7 +40,7 @@ import { Luminous } from 'luminous-lightbox';
 import v0 from '~/assets/cache/v0';
 import github from '~/assets/cache/github';
 import codewars from '~/assets/cache/codewars';
-import Donate from '~/components/donate';
+import Donate from '~/components/donate.vue';
 
 export default {
   components: {

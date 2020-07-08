@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import VLang from './language';
-import VTheme from './theme';
+import VLang from './language.vue';
+import VTheme from './theme.vue';
 
 export default {
   components: {

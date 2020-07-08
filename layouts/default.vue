@@ -8,8 +8,8 @@
 
 <script>
 /* eslint-disable max-len */
-import VHeader from '~/components/layouts/header';
-import VFooter from '~/components/layouts/footer';
+import VHeader from '~/components/layouts/header.vue';
+import VFooter from '~/components/layouts/footer.vue';
 
 export default {
   components: {
@@ -23,7 +23,6 @@ export default {
   }
 };
 </script>
-
 
 <style src="~/assets/reset.css"></style>
 <style src="~/assets/themes.css"></style>
@@ -47,7 +46,6 @@ export default {
   align-items: center;/*垂直居中*/
   justify-content:  center;/*水平居中*/
 }
-
 
 div,h1,h2,h3,h4,h5,h6 {
   display: flex;
