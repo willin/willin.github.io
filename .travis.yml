@@ -6,7 +6,7 @@ branches:
 before_install:
   - export TZ='Asia/Shanghai'
 install:
-  - npm i
+  - npm i --force
 before_script:
   - git config user.name "Travis-CI"
   - git config user.email "willin@willin.org"
