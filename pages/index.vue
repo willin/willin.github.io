@@ -23,13 +23,6 @@
           {{ $t('unit.wordcount') }}: <strong>{{ v0.wordcount }}</strong>
         </nav>
       </section>
-      <section>
-        <h3>CodeWars &nbsp; <strong>{{ codewars.level }}</strong></h3>
-        <nav>
-          {{ $t('index.rank') }}: <strong>#{{ codewars.position }}</strong> |
-          {{ $t('index.solutions') }}: <strong>{{ codewars.total }}</strong>
-        </nav>
-      </section>
       <Donate />
     </article>
   </main>
@@ -39,7 +32,6 @@
 import { Luminous } from 'luminous-lightbox';
 import v0 from '~/assets/cache/v0';
 import github from '~/assets/cache/github';
-import codewars from '~/assets/cache/codewars';
 import Donate from '~/components/donate.vue';
 
 export default {
@@ -49,7 +41,6 @@ export default {
   data() {
     return {
       v0,
-      codewars,
       github
     };
   },
