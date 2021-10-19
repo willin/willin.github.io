@@ -4,7 +4,7 @@
     <p>Copyright &copy; 2002~{{ year }} Willin Wang</p>
     <v-theme /> |
     <v-lang />
-    <p><small>苏ICP备17011988号-1</small></p>
+    <p><small><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">苏ICP备17011988号-1</a></small></p>
   </footer>
 </template>
 
